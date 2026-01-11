@@ -2,8 +2,15 @@
 
 :root {
   --background: #ffffff;
-  --foreground: red;
-  --font-ц: var(--font-montserrat, sans-serif);
+  --foreground: #000000;
+  /* --font-ц: var(--font-montserrat, sans-serif); */
+}
+.kharkiv {
+  font-family: var(--font-kharkiv-tone), sans-serif;
+}
+
+.test-kharkiv {
+  font-family: var(--font-kharkiv-tone) !important;
 }
 
 @theme inline {
@@ -20,7 +27,19 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #ffffff;
+  color: #000;
   @apply font-sans;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
 }

@@ -1,11 +1,23 @@
 import Header from "./components/Header";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   variable: "--font-montserrat",
+});
+
+const kharkivTone = localFont({
+  src: [
+    {
+      path: "../../public/fonts/KharkivTone-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-kharkiv-tone",
 });
 
 export const metadata = {
@@ -20,7 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} antialiased`}>
+      <body
+        className={`${montserrat.variable} ${kharkivTone.variable} font-sans antialiased`}
+      >
         <Header />
         <main>{children}</main>
       </body>
