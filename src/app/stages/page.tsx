@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Page() {
   return (
     <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[121px] mt-[150px]">
@@ -8,11 +10,14 @@ export default function Page() {
               <h1 className="lg:text-[65px] text-[25px] font-normal kharkiv">
                 ПОЛІГРАФІЯ
               </h1>
-              <img
-                className="lg:h-[46px] lg:w-[46px] h-[25px] w-[25px]"
-                src="/Group16.svg"
-                alt=""
-              />
+              <div className="relative lg:h-[46px] lg:w-[46px] h-[24px] w-[24px]">
+                <Image
+                  src="/Group16.svg"
+                  alt=""
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
             <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-0 gap-[32px]">
               <div className="">
@@ -36,7 +41,7 @@ export default function Page() {
                     Робота з візуалом
                   </p>
                   <p className="text-[15px] lg:text-[20px]  font-normal max-w-[323px]">
-                    Ескізування та затвердження мудборду; <br />  Розробка
+                    Ескізування та затвердження мудборду; <br /> Розробка
                     варіантів проекту та внесення правок (за потреби);
                   </p>
                 </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import type React from "react";
-
+import Image from "next/image";
 import Link from "next/link";
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { useRef, useState } from "react";
@@ -78,7 +78,7 @@ export default function Page() {
     <main className="h-[calc(100vh-60px)] py-6 flex justify-center items-center px-2">
       <section className="flex flex-col max-w-[1232px] w-full">
         {isMobile ? (
-          // Mobile slider with MUI Box
+          // Мобільний слайдер
           <Box
             ref={sliderRef}
             onMouseDown={handleMouseDown}
@@ -124,43 +124,59 @@ export default function Page() {
                 }}
               >
                 <Link href={logo.href} className="block">
-                  <img
-                    className="w-[402px] h-[528px] mb-[50px] pointer-events-none"
-                    src={logo.image || "/placeholder.svg"}
-                    alt={logo.subtitle}
-                    draggable={false}
-                  />
-                  <div className="flex justify-between items-end">
-                    <h4 className="text-[18px] font-bold">{logo.title}</h4>
-                    <img
-                      className="w-[15px] h-[15px] rotate-270"
-                      src="/Group16.svg"
-                      alt=""
+                  <div className="relative w-[402px] h-[528px] mb-[50px]">
+                    <Image
+                      src={logo.image || "/placeholder.svg"}
+                      alt={`Логотип ${logo.subtitle}`}
+                      fill
+                      className="object-cover pointer-events-none"
+                      draggable={false}
+                      sizes="402px"
                     />
                   </div>
+
+                  <div className="flex justify-between items-end">
+                    <h4 className="text-[18px] font-bold">{logo.title}</h4>
+                    <Image
+                      src="/Group16.svg"
+                      alt=""
+                      width={15}
+                      height={15}
+                      className="rotate-[-90deg]"
+                    />
+                  </div>
+
                   <p className="font-normal text-[18px]">{logo.subtitle}</p>
                 </Link>
               </Box>
             ))}
           </Box>
         ) : (
-          // Desktop grid
+          // Десктопна сітка
           <div className="flex gap-[50px] justify-between">
             {logos.map((logo, index) => (
               <Link key={index} href={logo.href} className="w-[252px]">
-                <img
-                  className="w-[252px] h-[328px] mb-[50px]"
-                  src={logo.image || "/placeholder.svg"}
-                  alt={logo.subtitle}
-                />
-                <div className="flex justify-between items-end">
-                  <h4 className="text-[18px] font-bold">{logo.title}</h4>
-                  <img
-                    className="w-[15px] h-[15px] rotate-270"
-                    src="/Group16.svg"
-                    alt=""
+                <div className="relative w-[252px] h-[328px] mb-[50px]">
+                  <Image
+                    src={logo.image || "/placeholder.svg"}
+                    alt={`Логотип ${logo.subtitle}`}
+                    fill
+                    className="object-cover"
+                    sizes="252px"
                   />
                 </div>
+
+                <div className="flex justify-between items-end">
+                  <h4 className="text-[18px] font-bold">{logo.title}</h4>
+                  <Image
+                    src="/Group16.svg"
+                    alt=""
+                    width={15}
+                    height={15}
+                    className="rotate-[-90deg]"
+                  />
+                </div>
+
                 <p className="font-normal text-[18px]">{logo.subtitle}</p>
               </Link>
             ))}

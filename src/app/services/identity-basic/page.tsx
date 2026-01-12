@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Page() {
   return (
     <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[121px] mt-[160px]">
@@ -10,7 +12,9 @@ export default function Page() {
                   IDENTITY <br /> BASIC
                 </h1>
               </div>
-              <img
+              <Image
+                width={46}
+                height={46}
                 src="/Group16.svg"
                 className="h-[46px] w-[46px] hidden lg:block"
                 alt=""

@@ -28,7 +28,9 @@ export default function Home() {
               <h3 className="font-normal lg:text-[45px] text-[25px] kharkiv">
                 ABOUT ME
               </h3>
-              <img
+              <Image
+                width={17}
+                height={17}
                 className="h-[17px] w-[17px] lg:h-[34px] lg:w-[34px]"
                 src="/Group16.svg"
                 alt=""

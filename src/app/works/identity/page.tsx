@@ -1,7 +1,7 @@
 "use client";
 
 import type React from "react";
-
+import Image from "next/image";
 import Link from "next/link";
 import { Box, useMediaQuery, useTheme } from "@mui/material";
 import { useRef, useState } from "react";
@@ -49,9 +49,7 @@ export default function Page() {
     setScrollLeft(sliderRef.current.scrollLeft);
   };
 
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
+  const handleMouseUp = () => setIsDragging(false);
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging || !sliderRef.current) return;
@@ -75,9 +73,7 @@ export default function Page() {
     sliderRef.current.scrollLeft = scrollLeft - walk;
   };
 
-  const handleTouchEnd = () => {
-    setIsDragging(false);
-  };
+  const handleTouchEnd = () => setIsDragging(false);
 
   if (isMobile) {
     return (
@@ -127,21 +123,29 @@ export default function Page() {
                 }}
               >
                 <Link href={item.href} className="block">
-                  <img
-                    className="w-[402px] h-[528px] mb-[50px] object-cover"
-                    src={item.image || "/placeholder.svg"}
-                    alt={item.description}
-                    draggable={false}
-                  />
+                  <div className="relative w-[402px] h-[528px] mb-[50px]">
+                    <Image
+                      src={item.image || "/placeholder.svg"}
+                      alt={`Айдентика — ${item.description}`}
+                      fill
+                      className="object-cover pointer-events-none"
+                      draggable={false}
+                      sizes="402px"
+                    />
+                  </div>
+
                   <div className="flex justify-between items-end">
                     <h4 className="text-[18px] font-bold">{item.title}</h4>
-                    <img
-                      className="w-[15px] h-[15px] rotate-270"
+                    <Image
                       src="/Group16.svg"
                       alt=""
+                      width={15}
+                      height={15}
+                      className="rotate-[-90deg]"
                       draggable={false}
                     />
                   </div>
+
                   <p className="font-normal text-[18px]">{item.description}</p>
                 </Link>
               </Box>
@@ -158,19 +162,27 @@ export default function Page() {
         <div className="flex gap-[50px] justify-between">
           {identityItems.map((item, index) => (
             <Link key={index} href={item.href} className="w-[252px]">
-              <img
-                className="w-[252px] h-[328px] mb-[50px]"
-                src={item.image || "/placeholder.svg"}
-                alt={item.description}
-              />
-              <div className="flex justify-between items-end">
-                <h4 className="text-[18px] font-bold">{item.title}</h4>
-                <img
-                  className="w-[15px] h-[15px] rotate-270"
-                  src="/Group16.svg"
-                  alt=""
+              <div className="relative w-[252px] h-[328px] mb-[50px]">
+                <Image
+                  src={item.image || "/placeholder.svg"}
+                  alt={`Айдентика — ${item.description}`}
+                  fill
+                  className="object-cover"
+                  sizes="252px"
                 />
               </div>
+
+              <div className="flex justify-between items-end">
+                <h4 className="text-[18px] font-bold">{item.title}</h4>
+                <Image
+                  src="/Group16.svg"
+                  alt=""
+                  width={15}
+                  height={15}
+                  className="rotate-[-90deg]"
+                />
+              </div>
+
               <p className="font-normal text-[18px]">{item.description}</p>
             </Link>
           ))}

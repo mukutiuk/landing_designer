@@ -15,7 +15,6 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { title } from "process";
 
 export default function HeaderMUI() {
   const pathname = usePathname();

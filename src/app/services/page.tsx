@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Page() {
   return (
     <div className="h-[calc(100vh-60px)]  p-4 sm:p-8 ">
@@ -6,7 +8,13 @@ export default function Page() {
           <div className="w-full lg:w-3/5">
             <div className="flex justify-between items-center mb-12 pb-2">
               <h1 className="text-[65px] font-normal">LOGO</h1>
-              <img className="h-[46px] w-[46px]" src="/Group16.svg" alt="" />
+              <Image
+                width={46}
+                height={46}
+                className="h-[46px] w-[46px]"
+                src="/Group16.svg"
+                alt=""
+              />
             </div>
             <ul className=" text-lg text-gray-800">
               <li className="py-2 border-b border-black-200">

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Page() {
   return (
     <section className="w-full bg-white mx-[50px] lg:px-8 lg:max-w-[1232px] lg:mx-auto mt-24 lg:mt-[224px] py-12">
@@ -7,11 +9,9 @@ export default function Page() {
           <h2 className="inline-block  px-6 py-2 mb-8 lg:text-[65px] text-[25px]  font-normal kharkiv">
             SOFT SKILLS
           </h2>
-          <img
-            className="lg:h-[46px] lg:w-[46px] h-[24px] w-[24px]"
-            src="/Group16.svg"
-            alt=""
-          />
+          <div className="relative lg:h-[46px] lg:w-[46px] h-[24px] w-[24px]">
+            <Image src="/Group16.svg" alt="" fill className="object-contain" />
+          </div>
         </div>
 
         <div className="flex w-full mb-[100px] gap-4 justify-center lg:justify-start">
@@ -53,11 +53,14 @@ export default function Page() {
             <h2 className="lg:text-[65px] text-[25px]  font-normal kharkiv">
               HARD SKILLS
             </h2>
-            <img
-              className="lg:h-[46px] lg:w-[46px] h-[24px] w-[24px]"
-              src="/Group16.svg"
-              alt=""
-            />
+            <div className="relative lg:h-[46px] lg:w-[46px] h-[24px] w-[24px]">
+              <Image
+                src="/Group16.svg"
+                alt=""
+                fill
+                className="object-contain"
+              />
+            </div>
           </div>
           <div className="flex lg:flex-row flex-col  items-center lg:items-start lg:gap-[61] gap-[22] w-full ">
             <div className="flex items-center  gap-3">

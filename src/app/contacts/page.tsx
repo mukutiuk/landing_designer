@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Page() {
   return (
     <main className="h-[calc(100vh)] bg-[#000] py-6 ">
@@ -8,10 +10,12 @@ export default function Page() {
               Контакти <br />{" "}
               <span className="hidden lg:inline">для зв’язку</span>
             </h1>
-            <img
-              className="lg:h-[46px] lg:w-[46px] h-[24px] w-[24px]"
+            <Image
               src="/arrowWhite.svg"
               alt=""
+              width={46}
+              height={46}
+              className="lg:h-[46px] lg:w-[46px] h-[24px] w-[24px]"
             />
           </div>
 
@@ -75,7 +79,9 @@ export default function Page() {
             <h2 className="lg:text-[45px] text-[15px]  leading-[1.1] font-normal uppercase">
               Більше моїх робіт тут:
             </h2>
-            <img
+            <Image
+              width={20}
+              height={20}
               className="lg:hidden h-[20px] w-[20px]"
               src="/arrowWhite.svg"
               alt=""
