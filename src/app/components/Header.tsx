@@ -177,8 +177,8 @@ export default function HeaderMUI() {
           flex: 1,
           display: "flex",
           flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
+          alignItems: "end",
+          marginTop: "90px",
           gap: "36px",
           pr: "32px",
         }}
@@ -189,7 +189,7 @@ export default function HeaderMUI() {
             href={item.href}
             onClick={() => setMobileMenuOpen(false)}
           >
-            <Box component="span" sx={linkStyles(item.href, 24)}>
+            <Box component="span" sx={linkStyles(item.href, 15)}>
               {item.title}
             </Box>
           </Link>
@@ -200,7 +200,7 @@ export default function HeaderMUI() {
           <Box
             component="span"
             sx={{
-              ...linkStyles("/services", 24),
+              ...linkStyles("/services", 15),
               display: "flex",
               alignItems: "center",
               gap: "8px",
@@ -223,14 +223,14 @@ export default function HeaderMUI() {
               href={service.href}
               onClick={() => setMobileMenuOpen(false)}
             >
-              <Box component="span" sx={{ fontSize: "16px" }}>
+              <Box component="span" sx={{ fontSize: "15px" }}>
                 {service.title}
               </Box>
             </Link>
           ))}
 
         <Link href="/contacts" onClick={() => setMobileMenuOpen(false)}>
-          <Box component="span" sx={linkStyles("/contacts", 24)}>
+          <Box component="span" sx={linkStyles("/contacts", 15)}>
             КОНТАКТИ
           </Box>
         </Link>
@@ -259,10 +259,19 @@ export default function HeaderMUI() {
                 width: "100%",
                 display: "flex",
                 justifyContent: "space-between",
+                alignItems: "center",
               }}
             >
-              <Link href="/">
-                <Box component="span" sx={linkStyles("/", 18)}>
+              <Link className="font-normal" href="/">
+                <Box
+                  component="span"
+                  sx={{
+                    fontWeight: "400",
+                    fontSize: "12px",
+                    color: "black",
+                    fontFamily: "var(--font-kharkiv-tone), sans-serif",
+                  }}
+                >
                   BALACHUK_DSGN
                 </Box>
               </Link>
