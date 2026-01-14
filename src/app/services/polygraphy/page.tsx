@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[121px] mt-[160px]">
+    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[121px] mt-[160px] mb-16">
       <div className="max-w-[1232px] lg:mx-auto min-h-[80vh] mx-[27px] lg:px-6">
         <div className="flex flex-col lg:space-x-12">
           <div className="w-full ">

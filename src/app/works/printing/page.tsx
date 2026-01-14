@@ -8,28 +8,29 @@ import { useRef, useState } from "react";
 
 const poligrafItems = [
   {
-    image: "/poligraf-1.png",
-    title: "БАНЕР А3",
-    description: "для Medline nail",
-    href: "",
-  },
-  {
-    image: "/poligraf-2.png",
+    image: "/p3.png",
     title: "ЛИСТІВКИ",
-    description: "для студії декору Belove",
-    href: "",
+    description: "для бренду декору",
+    href: "/works/printing/belove",
   },
   {
-    image: "/poligraf-3.png",
-    title: "БУКЛЕТ, ФЛАЄР",
-    description: "для HempActive",
-    href: "",
+    image: "/p2.png",
+
+    title: "СЕРТИФІКАТ",
+    description: "для фотографа",
+    href: "/works/printing/certificate",
+  },
+  {
+    image: "/p1.png",
+    title: "ЛИСТІВКИ",
+    description: "для дня народження",
+    href: "/works/printing/postcard",
   },
   {
     image: "/poligraf-4.png",
     title: "МЕНЮ",
     description: "для закладу харчування",
-    href: "",
+    href: "/works/printing/pizza",
   },
 ];
 

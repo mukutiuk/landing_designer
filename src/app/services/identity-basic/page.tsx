@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[121px] mt-[160px]">
+    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[121px] mt-[160px] mb-16">
       <div className="max-w-[1232px] lg:mx-auto min-h-[80vh] mx-[27px] lg:px-6 ">
         <div className="flex flex-col lg:flex-row lg:space-x-12">
           <div className="w-full lg:w-3/5">
@@ -90,8 +90,9 @@ export default function Page() {
         </div>
 
         <div className="  mt-[58px] lg:hidden">
-          <h2 className="text-[15px] font-normal   kharkiv">
-            ТЕРМІН РОЗРОБКИ: 10-14 РОБОЧИХ ДНІВ. ЦІНА: 12 000 ГРН
+          <h2 className="text-[14px] font-normal   kharkiv">
+            ТЕРМІН РОЗРОБКИ: 10-14 <br />
+            РОБОЧИХ ДНІВ. ЦІНА: 12 000 ГРН
           </h2>
         </div>
       </div>

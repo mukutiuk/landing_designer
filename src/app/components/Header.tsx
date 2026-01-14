@@ -179,6 +179,8 @@ export default function HeaderMUI() {
           flexDirection: "column",
           alignItems: "end",
           marginTop: "90px",
+          marginBottom: "60px",
+
           gap: "36px",
           pr: "32px",
         }}
