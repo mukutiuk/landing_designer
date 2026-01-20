@@ -5,9 +5,9 @@ export default function Page() {
     <div>
       <Image
         className="lg:h-[830px] mt-[100px] w-full lg:mb-[135px] mb-[37px]"
-        src="/belove/be1.png"
+        src="/honey/pL.png"
         alt="Головна ілюстрація LLAMA English"
-        width={1920}
+        width={2920}
         height={830}
         priority
       />
@@ -15,7 +15,7 @@ export default function Page() {
       <div className="max-w-[1193px] m-auto  mb-[31px] px-[27px]">
         <div className="flex gap-[35px] items-center">
           <h2 className="kharkiv nline-block   px-6 py-2 mb-8 lg:text-[65px] text-[25px] font-normal">
-            ЛИСТІВКИ
+            ЕТИКЕТКА
           </h2>
 
           <Image
@@ -29,49 +29,26 @@ export default function Page() {
 
         <div className="flex flex-wrap items-baseline gap-x-3">
           <span className="font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] text-left tracking-[0] lg:text-justify lg:mb-[70px] ">
-            Листівки вкладиші та листівки допомога по догляду для бренду декору
-            Belove.
+            Етикетка для соняшникового меду з чітким акцентом на натуральність
+            продукту. Поєднання класичних бджолярських мотивів і сучасної,
+            акуратної тектсової верстки. Колірна гама: медово-жовтий, чорний,
+            білий та теплі бурштинові відтінки, що створюють відчуття
+            автентичності, ремісничої якості та довіри.
           </span>
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row">
-        <Image
-          className="w-full "
-          src="/belove/be2.png"
-          alt=""
-          width={1920}
-          height={1080}
-        />{" "}
-        <Image
-          className="w-full "
-          src="/belove/be3.png"
-          alt=""
-          width={1920}
-          height={1080}
-        />
-      </div>
-
-      <div className="flex flex-col lg:flex-row">
-        <Image
-          className="w-full "
-          src="/belove/be4.png"
-          alt=""
-          width={1920}
-          height={1080}
-        />{" "}
-        <Image
-          className="w-full  hidden lg:block"
-          src="/belove/be5.png"
-          alt=""
-          width={1920}
-          height={1080}
-        />
-      </div>
-
       <Image
-        className="w-full hidden lg:block"
-        src="/belove/be6.png"
+        className="w-full "
+        src="/honey/pl1.png"
+        alt=""
+        width={1920}
+        height={1080}
+        priority
+      />
+      <Image
+        className="w-full "
+        src="/honey/pl2.png"
         alt=""
         width={1920}
         height={1080}

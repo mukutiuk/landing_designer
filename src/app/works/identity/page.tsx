@@ -33,14 +33,47 @@ const identityItems = [
   },
 ];
 
+const identityItemsS = [
+  {
+    href: "/works/identity/cocon",
+    image: "/logo-1.svg",
+    title: "АЙДЕНТИКА",
+    description: "Сocon Luxe lingerie store",
+  },
+  {
+    href: "/works/identity/immortal",
+    image: "/loS.png",
+    title: "АЙДЕНТИКА",
+    description: "Immortal english school",
+  },
+  {
+    href: "/works/identity/medline",
+    image: "/logo-3.svg",
+    title: "АЙДЕНТИКА",
+    description: "Medline nails school/stuio",
+  },
+  {
+    href: "/works/identity/dragon",
+    image: "/los1.png",
+    title: "АЙДЕНТИКА",
+    description: "Smart dragon english school",
+  },
+];
+
 export default function Page() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const sliderRef = useRef<HTMLDivElement>(null);
+
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const SLIDE_WIDTH = 402;
+  const GAP = 20;
+  const FULL_SLIDE_WIDTH = SLIDE_WIDTH + GAP;
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!sliderRef.current) return;
@@ -49,7 +82,7 @@ export default function Page() {
     setScrollLeft(sliderRef.current.scrollLeft);
   };
 
-  const handleMouseUp = () => setIsDragging(false);
+  const stopDragging = () => setIsDragging(false);
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging || !sliderRef.current) return;
@@ -73,64 +106,55 @@ export default function Page() {
     sliderRef.current.scrollLeft = scrollLeft - walk;
   };
 
-  const handleTouchEnd = () => setIsDragging(false);
+  const handleScroll = () => {
+    if (!sliderRef.current) return;
+    const index = Math.round(sliderRef.current.scrollLeft / FULL_SLIDE_WIDTH);
+    setActiveIndex(index);
+  };
 
   if (isMobile) {
     return (
       <main className="min-h-[calc(100vh-60px)] py-6 flex justify-center items-center px-2">
         <section className="flex flex-col w-full">
+          {/* ===== MOBILE SLIDER ===== */}
           <Box
             ref={sliderRef}
+            onScroll={handleScroll}
             onMouseDown={handleMouseDown}
-            onMouseUp={handleMouseUp}
-            onMouseLeave={handleMouseUp}
+            onMouseUp={stopDragging}
+            onMouseLeave={stopDragging}
             onMouseMove={handleMouseMove}
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
+            onTouchEnd={stopDragging}
             sx={{
               display: "flex",
-              gap: "20px",
+              gap: `${GAP}px`,
               overflowX: "auto",
               scrollSnapType: "x mandatory",
               cursor: isDragging ? "grabbing" : "grab",
               userSelect: "none",
               px: 2,
               pb: 2,
-              "&::-webkit-scrollbar": {
-                height: "6px",
-              },
-              "&::-webkit-scrollbar-track": {
-                backgroundColor: "#f1f1f1",
-                borderRadius: "10px",
-              },
-              "&::-webkit-scrollbar-thumb": {
-                backgroundColor: "#888",
-                borderRadius: "10px",
-              },
-              "&::-webkit-scrollbar-thumb:hover": {
-                backgroundColor: "#555",
-              },
             }}
           >
-            {identityItems.map((item, index) => (
+            {identityItemsS.map((item, index) => (
               <Box
                 key={index}
                 sx={{
                   flex: "0 0 auto",
-                  width: "402px",
+                  width: `${SLIDE_WIDTH}px`,
                   scrollSnapAlign: "center",
                 }}
               >
-                <Link href={item.href} className="block">
+                <Link href={item.href}>
                   <div className="relative w-[402px] h-[528px] mb-[50px]">
                     <Image
-                      src={item.image || "/placeholder.svg"}
+                      src={item.image}
                       alt={`Айдентика — ${item.description}`}
                       fill
                       className="object-cover pointer-events-none"
                       draggable={false}
-                      sizes="402px"
                     />
                   </div>
 
@@ -142,20 +166,32 @@ export default function Page() {
                       width={15}
                       height={15}
                       className="rotate-[-90deg]"
-                      draggable={false}
                     />
                   </div>
 
-                  <p className="font-normal text-[18px]">{item.description}</p>
+                  <p className="text-[18px]">{item.description}</p>
                 </Link>
               </Box>
             ))}
           </Box>
+
+          {/* ===== DOTS INDICATOR ===== */}
+          <div className="flex justify-center gap-2 mt-4">
+            {identityItemsS.map((_, index) => (
+              <span
+                key={index}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  index === activeIndex ? "bg-black w-4" : "bg-gray-300 w-2"
+                }`}
+              />
+            ))}
+          </div>
         </section>
       </main>
     );
   }
 
+  /* ===== DESKTOP GRID ===== */
   return (
     <main className="h-[calc(100vh-60px)] py-6 flex justify-center items-center">
       <section className="flex flex-col max-w-[1232px] w-full">
@@ -164,11 +200,10 @@ export default function Page() {
             <Link key={index} href={item.href} className="w-[252px]">
               <div className="relative w-[252px] h-[328px] mb-[50px]">
                 <Image
-                  src={item.image || "/placeholder.svg"}
+                  src={item.image}
                   alt={`Айдентика — ${item.description}`}
                   fill
                   className="object-cover"
-                  sizes="252px"
                 />
               </div>
 
@@ -183,7 +218,7 @@ export default function Page() {
                 />
               </div>
 
-              <p className="font-normal text-[18px]">{item.description}</p>
+              <p className="text-[18px]">{item.description}</p>
             </Link>
           ))}
         </div>

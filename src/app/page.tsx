@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className=" bg-[#fff] flex flex-col max-w-[1232px] mx-auto">
-      <section className="mt-[118px]  w-full bg-[#fff]/90 flex flex-col justify-center lg:min-h-[60vh] relative overflow-hidden mb-[100px] lg:mb-0">
+      <section className="lg:mt-[118px] mt-[70px]  w-full bg-[#fff]/90 flex flex-col justify-center lg:min-h-[60vh] relative overflow-hidden mb-[100px] lg:mb-0">
         <h1 className="text-[40px] sm:text-[80px] lg:text-[169px] font-normal text-center kharkiv  lg:text-left ">
           PORTFOLIO
         </h1>
-        <div className="lg:flex-row flex-col flex lg:gap-[68px] gap-[50px] mt-[33px]">
+        <div className="lg:flex-row flex-col flex lg:gap-[68px] gap-[50px] lg:mt-[33px] mt-[10px]">
           <Image
             src="/Rectangle1.svg"
             alt=""

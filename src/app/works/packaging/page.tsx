@@ -8,9 +8,15 @@ import { useRef, useState } from "react";
 
 export default function Page() {
   const sliderRef = useRef<HTMLDivElement>(null);
+
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const SLIDE_WIDTH = 402;
+  const GAP = 16;
+  const FULL_SLIDE_WIDTH = SLIDE_WIDTH + GAP;
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!sliderRef.current) return;
@@ -27,94 +33,105 @@ export default function Page() {
     sliderRef.current.scrollLeft = scrollLeft - walk;
   };
 
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
+  const stopDragging = () => setIsDragging(false);
 
-  const handleMouseLeave = () => {
-    setIsDragging(false);
+  const handleScroll = () => {
+    if (!sliderRef.current) return;
+    const index = Math.round(sliderRef.current.scrollLeft / FULL_SLIDE_WIDTH);
+    setActiveIndex(index);
   };
 
   const packagingItems = [
     {
-      href: "/works/packaging/cocon",
+      href: "/works/packaging/honey",
       image: "/pakink-1.png",
       title: "Етикетка",
       description: "для соняшникового меду",
     },
     {
+      href: "/works/packaging/ointment",
+      image: "/packing-2s.png",
+      title: "ЕТИКЕТКА+КОРОБКА",
+      description: "для регенеруючої мазі",
+    },
+    {
+      href: "/works/packaging/oil",
+      image: "/packing-3s.png",
+      title: "ЕТИКЕТКА+КОРОБКА",
+      description: "серія упаковаль для олій",
+    },
+    {
+      href: "/works/packaging/cocon",
+      image: "/packing-4s.png",
+      title: "АЙДЕНТИКА",
+      description: "Cocon luxe",
+    },
+  ];
+
+  const packagingItemsSmol = [
+    {
+      href: "/works/packaging/honey",
+      image: "/p1S.png",
+      title: "Етикетка",
+      description: "для соняшникового меду",
+    },
+    {
       href: "",
-      image: "/packing-2.png",
+      image: "/packing-2s.png",
       title: "ЕТИКЕТКА+КОРОБКА",
       description: "для регенеруючої мазі",
     },
     {
       href: "",
-      image: "/packing-3.png",
+      image: "/packing-3s.png",
       title: "ЕТИКЕТКА+КОРОБКА",
       description: "серія упаковаль для олій",
     },
     {
-      href: "",
-      image: "/packing-4.png",
+      href: "/works/packaging/cocon",
+      image: "/packing-4s.png",
       title: "АЙДЕНТИКА",
-      description: "Smart dragon english school",
+      description: "Cocon luxe",
     },
   ];
 
   return (
-    <main className="h-[calc(100vh-60px)] py-6 flex justify-center items-center px-2">
-      <section className="flex flex-col max-w-[1232px] w-full">
-        {/* Мобільний слайдер */}
+    <main className="py-6 px-2 lg:mt-[235px]">
+      <section className="max-w-[1232px] mx-auto w-full">
+        {/* ===== MOBILE SLIDER ===== */}
         <Box
           ref={sliderRef}
+          onScroll={handleScroll}
           onMouseDown={handleMouseDown}
           onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseLeave}
-          className="md:hidden"
+          onMouseUp={stopDragging}
+          onMouseLeave={stopDragging}
+          className="flex overflow-x-auto lg:hidden"
           sx={{
-            display: "flex",
-            overflowX: "auto",
-            gap: "16px",
+            gap: `${GAP}px`,
             padding: "16px",
             scrollSnapType: "x mandatory",
             cursor: isDragging ? "grabbing" : "grab",
             userSelect: "none",
-            "&::-webkit-scrollbar": {
-              height: "8px",
-            },
-            "&::-webkit-scrollbar-track": {
-              backgroundColor: "#f1f1f1",
-              borderRadius: "4px",
-            },
-            "&::-webkit-scrollbar-thumb": {
-              backgroundColor: "#888",
-              borderRadius: "4px",
-              "&:hover": {
-                backgroundColor: "#555",
-              },
-            },
           }}
         >
-          {packagingItems.map((item, index) => (
+          {packagingItemsSmol.map((item, index) => (
             <Box
               key={index}
               sx={{
                 flexShrink: 0,
-                width: "402px",
+                width: `${SLIDE_WIDTH}px`,
                 scrollSnapAlign: "start",
               }}
             >
-              <Link href={item.href} className="block">
-                <div className="relative w-[402px] h-[528px] mb-[50px]">
+              <Link href={item.href}>
+                <div className="relative w-[402px] h-[528px] mb-[40px]">
                   <Image
-                    src={item.image || "/placeholder.svg"}
+                    src={item.image}
                     alt={`${item.title} - ${item.description}`}
                     fill
                     className="object-cover pointer-events-none"
                     draggable={false}
-                    sizes="402px"
                   />
                 </div>
 
@@ -126,27 +143,37 @@ export default function Page() {
                     width={15}
                     height={15}
                     className="rotate-[-90deg]"
-                    draggable={false}
                   />
                 </div>
 
-                <p className="font-normal text-[18px]">{item.description}</p>
+                <p className="text-[18px]">{item.description}</p>
               </Link>
             </Box>
           ))}
         </Box>
 
-        {/* Десктопна сітка */}
-        <div className="hidden md:flex gap-[50px] justify-between">
+        {/* ===== DOTS INDICATOR ===== */}
+        <div className="flex justify-center gap-2 mt-4 lg:hidden">
+          {packagingItemsSmol.map((_, index) => (
+            <span
+              key={index}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                index === activeIndex ? "bg-black w-4" : "bg-gray-300 w-2"
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* ===== DESKTOP GRID ===== */}
+        <div className="hidden md:flex gap-[50px] justify-between mt-8">
           {packagingItems.map((item, index) => (
             <Link key={index} href={item.href} className="w-[252px]">
-              <div className="relative w-[252px] h-[328px] mb-[50px]">
+              <div className="relative w-[252px] h-[328px] mb-[40px]">
                 <Image
-                  src={item.image || "/placeholder.svg"}
+                  src={item.image}
                   alt={`${item.title} - ${item.description}`}
                   fill
                   className="object-cover"
-                  sizes="252px"
                 />
               </div>
 
@@ -161,7 +188,7 @@ export default function Page() {
                 />
               </div>
 
-              <p className="font-normal text-[18px]">{item.description}</p>
+              <p className="text-[18px]">{item.description}</p>
             </Link>
           ))}
         </div>

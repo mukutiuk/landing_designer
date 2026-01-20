@@ -15,7 +15,6 @@ const poligrafItems = [
   },
   {
     image: "/p2.png",
-
     title: "СЕРТИФІКАТ",
     description: "для фотографа",
     href: "/works/printing/certificate",
@@ -34,11 +33,48 @@ const poligrafItems = [
   },
 ];
 
+const poligrafItemsS = [
+  {
+    image: "/I1.png",
+    title: "ЛИСТІВКИ",
+    description: "для бренду декору",
+    href: "/works/printing/belove",
+  },
+  {
+    image: "/I2.png",
+    title: "СЕРТИФІКАТ",
+    description: "для фотографа",
+    href: "/works/printing/certificate",
+  },
+  {
+    image: "/I3.png",
+    title: "ЛИСТІВКИ",
+    description: "для дня народження",
+    href: "/works/printing/postcard",
+  },
+  {
+    image: "/I4.png",
+    title: "МЕНЮ",
+    description: "для закладу харчування",
+    href: "/works/printing/pizza",
+  },
+];
+
 export default function Page() {
   const sliderRef = useRef<HTMLDivElement>(null);
+
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const SLIDE_WIDTH = 402 + 16; // ширина слайда + gap
+
+  const handleScroll = () => {
+    if (!sliderRef.current) return;
+    const index = Math.round(sliderRef.current.scrollLeft / SLIDE_WIDTH);
+    setActiveIndex(index);
+  };
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!sliderRef.current) return;
@@ -47,9 +83,7 @@ export default function Page() {
     setScrollLeft(sliderRef.current.scrollLeft);
   };
 
-  const handleMouseUp = () => {
-    setIsDragging(false);
-  };
+  const handleMouseUp = () => setIsDragging(false);
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging || !sliderRef.current) return;
@@ -79,6 +113,7 @@ export default function Page() {
         {/* Мобільний слайдер */}
         <Box
           ref={sliderRef}
+          onScroll={handleScroll}
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp}
@@ -91,6 +126,8 @@ export default function Page() {
             overflowX: "auto",
             gap: 2,
             scrollSnapType: "x mandatory",
+            cursor: isDragging ? "grabbing" : "grab",
+            userSelect: "none",
             "&::-webkit-scrollbar": {
               height: 8,
             },
@@ -101,15 +138,10 @@ export default function Page() {
             "&::-webkit-scrollbar-thumb": {
               backgroundColor: "#888",
               borderRadius: 4,
-              "&:hover": {
-                backgroundColor: "#555",
-              },
             },
-            cursor: isDragging ? "grabbing" : "grab",
-            userSelect: "none",
           }}
         >
-          {poligrafItems.map((item, index) => (
+          {poligrafItemsS.map((item, index) => (
             <Box
               key={index}
               sx={{
@@ -145,6 +177,18 @@ export default function Page() {
             </Box>
           ))}
         </Box>
+
+        {/* ІНДИКАТОР */}
+        <div className="flex justify-center gap-2 mt-4 md:hidden">
+          {poligrafItemsS.map((_, index) => (
+            <span
+              key={index}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                index === activeIndex ? "bg-black w-4" : "bg-gray-300 w-2"
+              }`}
+            />
+          ))}
+        </div>
 
         {/* Десктопна сітка */}
         <div className="hidden md:flex gap-[50px] justify-between">

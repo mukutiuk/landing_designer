@@ -121,9 +121,10 @@ export default function HeaderMUI() {
                     <Box
                       component="span"
                       sx={{
-                        fontSize: "12px",
+                        fontSize: "9px",
                         textTransform: "uppercase",
                         letterSpacing: "1px",
+                        gap: "30px",
                         color: "#000",
                         cursor: "pointer",
                         "&:hover": { opacity: 0.5 },
@@ -178,7 +179,7 @@ export default function HeaderMUI() {
           display: "flex",
           flexDirection: "column",
           alignItems: "end",
-          marginTop: "90px",
+          marginTop: "70px",
           marginBottom: "60px",
 
           gap: "36px",
@@ -225,7 +226,7 @@ export default function HeaderMUI() {
               href={service.href}
               onClick={() => setMobileMenuOpen(false)}
             >
-              <Box component="span" sx={{ fontSize: "15px" }}>
+              <Box component="span" sx={{ fontSize: "13px" }}>
                 {service.title}
               </Box>
             </Link>
@@ -270,7 +271,7 @@ export default function HeaderMUI() {
                   sx={{
                     fontWeight: "400",
                     fontSize: "12px",
-                    color: "black",
+                    color: isDarkHeader ? "#fff" : "black",
                     fontFamily: "var(--font-kharkiv-tone), sans-serif",
                   }}
                 >
