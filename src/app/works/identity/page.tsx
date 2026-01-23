@@ -112,96 +112,83 @@ export default function Page() {
     setActiveIndex(index);
   };
 
-  if (isMobile) {
-    return (
-      <main className="min-h-[calc(100vh-60px)] py-6 flex justify-center items-center px-2">
-        <section className="flex flex-col w-full">
-          {/* ===== MOBILE SLIDER ===== */}
-          <Box
-            ref={sliderRef}
-            onScroll={handleScroll}
-            onMouseDown={handleMouseDown}
-            onMouseUp={stopDragging}
-            onMouseLeave={stopDragging}
-            onMouseMove={handleMouseMove}
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={stopDragging}
-            sx={{
-              display: "flex",
-              gap: `${GAP}px`,
-              overflowX: "auto",
-              scrollSnapType: "x mandatory",
-              cursor: isDragging ? "grabbing" : "grab",
-              userSelect: "none",
-              px: 2,
-              pb: 2,
-            }}
-          >
-            {identityItemsS.map((item, index) => (
-              <Box
-                key={index}
-                sx={{
-                  flex: "0 0 auto",
-                  width: `${SLIDE_WIDTH}px`,
-                  scrollSnapAlign: "center",
-                }}
-              >
-                <Link href={item.href}>
-                  <div className="relative w-[402px] h-[528px] mb-[50px]">
-                    <Image
-                      src={item.image}
-                      alt={`Айдентика — ${item.description}`}
-                      fill
-                      className="object-cover pointer-events-none"
-                      draggable={false}
-                    />
-                  </div>
-
-                  <div className="flex justify-between items-end">
-                    <h4 className="text-[18px] font-bold">{item.title}</h4>
-                    <Image
-                      src="/Group16.svg"
-                      alt=""
-                      width={15}
-                      height={15}
-                      className="rotate-[-90deg]"
-                    />
-                  </div>
-
-                  <p className="text-[18px]">{item.description}</p>
-                </Link>
-              </Box>
-            ))}
-          </Box>
-
-          {/* ===== DOTS INDICATOR ===== */}
-          <div className="flex justify-center gap-2 mt-4">
-            {identityItemsS.map((_, index) => (
-              <span
-                key={index}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  index === activeIndex ? "bg-black w-4" : "bg-gray-300 w-2"
-                }`}
-              />
-            ))}
-          </div>
-        </section>
-      </main>
-    );
-  }
-
-  /* ===== DESKTOP GRID ===== */
   return (
-    <main className="h-[calc(100vh-60px)] py-6 flex justify-center items-center">
-      <section className="flex flex-col max-w-[1232px] w-full">
-        <div className="flex gap-[50px] justify-between">
+    <main className="py-6 px-2 lg:mt-[235px]">
+      <section className="max-w-[1232px] mx-auto w-full">
+        {/* ===== MOBILE SLIDER ===== */}
+        <Box
+          ref={sliderRef}
+          onScroll={handleScroll}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={stopDragging}
+          onMouseLeave={stopDragging}
+          className="flex overflow-x-auto lg:hidden"
+          sx={{
+            gap: `${GAP}px`,
+            padding: "16px",
+            scrollSnapType: "x mandatory",
+            cursor: isDragging ? "grabbing" : "grab",
+            userSelect: "none",
+          }}
+        >
+          {identityItemsS.map((item, index) => (
+            <Box
+              key={index}
+              sx={{
+                flexShrink: 0,
+                width: `${SLIDE_WIDTH}px`,
+                scrollSnapAlign: "start",
+              }}
+            >
+              <Link href={item.href}>
+                <div className="relative w-[402px] h-[528px] mb-[40px]">
+                  <Image
+                    src={item.image}
+                    alt={`${item.title} - ${item.description}`}
+                    fill
+                    className="object-cover pointer-events-none"
+                    draggable={false}
+                  />
+                </div>
+
+                <div className="flex justify-between items-end">
+                  <h4 className="text-[18px] font-bold">{item.title}</h4>
+                  <Image
+                    src="/Group16.svg"
+                    alt=""
+                    width={15}
+                    height={15}
+                    className="rotate-[-90deg]"
+                  />
+                </div>
+
+                <p className="text-[18px]">{item.description}</p>
+              </Link>
+            </Box>
+          ))}
+        </Box>
+
+        {/* ===== DOTS INDICATOR ===== */}
+        <div className="flex justify-center gap-2 mt-4 lg:hidden">
+          {identityItemsS.map((_, index) => (
+            <span
+              key={index}
+              className={`h-2 rounded-full transition-all duration-300 ${
+                index === activeIndex ? "bg-black w-4" : "bg-gray-300 w-2"
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* ===== DESKTOP GRID ===== */}
+        <div className="hidden md:flex gap-[50px] justify-between mt-8">
           {identityItems.map((item, index) => (
             <Link key={index} href={item.href} className="w-[252px]">
-              <div className="relative w-[252px] h-[328px] mb-[50px]">
+              <div className="relative w-[252px] h-[328px] mb-[40px]">
                 <Image
                   src={item.image}
-                  alt={`Айдентика — ${item.description}`}
+                  alt={`${item.title} - ${item.description}`}
                   fill
                   className="object-cover"
                 />
