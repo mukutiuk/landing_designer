@@ -76,13 +76,14 @@ export default function Page() {
       description: "для соняшникового меду",
     },
     {
-      href: "",
+      href: "/works/packaging/ointment",
+
       image: "/packing-2s.png",
       title: "ЕТИКЕТКА+КОРОБКА",
       description: "для регенеруючої мазі",
     },
     {
-      href: "",
+      href: "/works/packaging/oil",
       image: "/packing-3s.png",
       title: "ЕТИКЕТКА+КОРОБКА",
       description: "серія упаковаль для олій",
