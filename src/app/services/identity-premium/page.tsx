@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -20,12 +21,12 @@ export default function Page() {
                 className="h-[46px] w-[46px] hidden lg:block"
                 alt=""
               />
-              <a
-                href="#"
+              <Link
+                href="/works/identity"
                 className="text-[10px] kharkiv font-normal pb-1 border-b border-black-200 text-left   hover:text-black transition duration-200 lg:hidden max-w-[123px"
               >
                 Переглянути <br /> приклади робіт
-              </a>
+              </Link>
             </div>
 
             <ul className=" text-lg text-gray-800">
@@ -62,12 +63,12 @@ export default function Page() {
 
           <div className="w-full lg:w-2/5 flex flex-col justify-between items-end pt-4 lg:pt-0">
             <div className=" items-center justify-center space-x-4 hidden lg:flex">
-              <a
-                href="#"
+              <Link
+                href="/works/identity"
                 className="text-[18px] pt-24 font-normal pb-4 border-b border-black-200 text-center   hover:text-black transition duration-200"
               >
                 Переглянути приклади робіт
-              </a>
+              </Link>
             </div>
             <div className="lg:max-w-[274px] flex flex-col justify-center ">
               <p className=" text-[14px] font-normal lg:mb-12 mb-2 text-black/50">

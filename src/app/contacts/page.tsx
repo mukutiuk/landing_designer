@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <main className="h-[calc(100vh)] bg-[#000] py-6 ">
+    <main className="min-h-[calc(100vh)] bg-[#000] py-6 ">
       <div className="text-white bg-black max-w-[1232px] mx-auto px-6">
         <div className="mb-10 mt-[132px]">
           <div className="flex  items-end w-full lg:gap-[76px] justify-between lg:justify-start">

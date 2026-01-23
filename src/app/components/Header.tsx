@@ -43,7 +43,6 @@ export default function HeaderMUI() {
     { title: "IDENTITY BASIC", href: "/services/identity-basic" },
     { title: "IDENTITY PREMIUM", href: "/services/identity-premium" },
     { title: "ПОЛІГРАФІЯ", href: "/services/polygraphy" },
-    { title: "WEB МАКЕТИ", href: "/services/web-mockups" },
   ];
 
   /* ================= STYLES ================= */
@@ -121,7 +120,7 @@ export default function HeaderMUI() {
                     <Box
                       component="span"
                       sx={{
-                        fontSize: "9px",
+                        fontSize: "13   px",
                         textTransform: "uppercase",
                         letterSpacing: "1px",
                         gap: "30px",
