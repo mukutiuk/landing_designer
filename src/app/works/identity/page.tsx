@@ -42,7 +42,7 @@ const identityItemsS = [
   },
   {
     href: "/works/identity/immortal",
-    image: "/loS.png",
+    image: "/immoral.jpg",
     title: "АЙДЕНТИКА",
     description: "Immortal english school",
   },
@@ -54,7 +54,7 @@ const identityItemsS = [
   },
   {
     href: "/works/identity/dragon",
-    image: "/los1.png",
+    image: "/Sm.jpg",
     title: "АЙДЕНТИКА",
     description: "Smart dragon english school",
   },
@@ -130,6 +130,7 @@ export default function Page() {
             scrollSnapType: "x mandatory",
             cursor: isDragging ? "grabbing" : "grab",
             userSelect: "none",
+            marginLeft: "5px",
           }}
         >
           {identityItemsS.map((item, index) => (

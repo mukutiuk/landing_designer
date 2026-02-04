@@ -138,6 +138,7 @@ export default function Page() {
                 pb: 2,
                 cursor: isDragging ? "grabbing" : "grab",
                 userSelect: "none",
+                marginLeft: "5px",
               }}
             >
               {logosS.map((logo, index) => (

@@ -12,9 +12,9 @@ export default function Page() {
         priority // можна додати, якщо це головне зображення на сторінці
       />
 
-      <div className="max-w-[1193px] m-auto mb-[37px] px-[27px]">
+      <div className="max-w-[1193px] mx-auto mb-[37px] px-[27px]">
         <div className="flex gap-[35px] items-center mb-[22px]">
-          <h2 className="kharkiv inline-block px-6 py-2 mb-8 lg:text-[65px] text-[25px] font-normal">
+          <h2 className="kharkiv inline-block px-6 py-2 lg:text-[65px] text-[25px] font-normal">
             IMMORTAL SCHOOL
           </h2>
           <Image
@@ -26,55 +26,37 @@ export default function Page() {
           />
         </div>
 
-        <p
-          className="
-            font-montserrat
-            font-semibold
-            lg:text-[25px]
-            text-[12px]
-            leading-[100%]
-            tracking-[0]
-            text-justify"
-        >
-          IMMORTAL SCHOOL -{" "}
-          <span className="lg:font-semibold font-normal">
-            це онлайн школа англійської мови.
-          </span>
+        {/* Заголовний опис */}
+        <p className="font-montserrat lg:text-[25px] text-[12px] leading-[1.25] text-justify hyphens-auto">
+          <span className="font-semibold">IMMORTAL SCHOOL — </span>
+          це онлайн школа англійської мови.
         </p>
 
-        <p
-          className="
-            lg:mb-[169px] mb-[63px]
-            font-montserrat
-            font-normal
-            lg:text-[25px]
-            text-[12px]
-            leading-[100%]
-            tracking-[0]
-            text-justify"
-        >
+        {/* Основний текст */}
+        <p className="mt-2 font-montserrat lg:text-[25px] text-[12px] leading-[1.25] text-justify hyphens-auto">
           Це не просто місце для вивчення мови, а простір, де не страшно
-          помилятися. Тут підтримують на кожному кроці, тому що помилки - це
+          помилятися. Тут підтримують на кожному кроці, тому що помилки — це
           частина розвитку.
-          <p className="mt-2 lg:mt-0">
-            Основна аудиторія - молоді люди (18-35 років), які активно прагнуть
-            вивчати англійську мову для реального життя - життя закордоном,
-            подорожей, роботи, спілкування з іноземцями. Це студенти, молоді
-            професіонали, підприємці та фрілансери, 
-          </p>
+        </p>
+
+        <p className="mt-2 lg:mb-[169px] mb-[63px] font-montserrat lg:text-[25px] text-[12px] leading-[1.25] text-justify hyphens-auto">
+          Основна аудиторія — молоді люди (18–35 років), які активно прагнуть
+          вивчати англійську мову для реального життя: життя за кордоном,
+          подорожей, роботи, спілкування з іноземцями. Це студенти, молоді
+          професіонали, підприємці та фрілансери.
         </p>
       </div>
 
       {/* Мобільна версія */}
       <Image
-        className="w-full mb-6 lg:hidden"
+        className="w-full  lg:hidden"
         src="/immortal/imme1.png"
         alt=""
         width={390}
         height={600} // приблизно, підстав свій розмір
       />
 
-      <div className="flex items-center flex-col">
+      {/* <div className="flex items-center flex-col">
         <p className="lg:hidden text-[10px] mb-[35px]">Основний логотип</p>
         <Image
           className="lg:mb-[158px] mb-[64px] w-[249px] lg:w-[449px]"
@@ -97,25 +79,31 @@ export default function Page() {
           width={449}
           height={180} // підстав реальну пропорцію
         />
-      </div>
-
+      </div> */}
+      <Image
+        src="/immoral_3.jpg"
+        alt=""
+        width={390}
+        height={800}
+        className="w-full"
+      />
       {/* Мобільні зображення */}
       <div className="block lg:hidden">
         <Image
-          src="/immortal/im1.png"
+          src="/immoral2.jpg"
           alt=""
           width={390}
           height={800}
           className="w-full"
         />
         <Image
-          src="/immortal/im2.png"
+          src="/immoral_4.jpg"
           alt=""
           width={390}
           height={800}
           className="w-full"
         />
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <Image
             className="max-w-[340px] my-[25px]"
             src="/immortal/im3.png"
@@ -123,49 +111,49 @@ export default function Page() {
             width={340}
             height={400}
           />
-        </div>
+        </div> */}
         <Image
-          src="/immortal/im4.png"
+          src="/immoral_5.jpg"
           alt=""
           width={390}
           height={800}
           className="w-full"
         />
         <Image
-          src="/immortal/im5.png"
+          src="/immoral_6.jpg"
           alt=""
           width={390}
           height={800}
           className="w-full"
         />
         <Image
-          src="/immortal/im6.png"
+          src="/immoral_10.jpg"
           alt=""
           width={390}
           height={800}
           className="w-full"
         />
         <Image
-          src="/immortal/im7.png"
+          src="/immoral_7.jpg"
           alt=""
           width={390}
           height={800}
           className="w-full"
         />
         <Image
-          src="/immortal/im8.png"
+          src="/immoral_9.jpg"
           alt=""
           width={390}
           height={800}
           className="w-full"
         />
-        <Image
+        {/* <Image
           src="/immortal/im9.png"
           alt=""
           width={390}
           height={800}
           className="w-full"
-        />
+        /> */}
       </div>
 
       {/* Десктопна версія */}

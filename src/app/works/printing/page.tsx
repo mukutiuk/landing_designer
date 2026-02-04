@@ -125,6 +125,7 @@ export default function Page() {
             display: { xs: "flex", md: "none" },
             overflowX: "auto",
             gap: 2,
+            marginLeft: "5px",
             scrollSnapType: "x mandatory",
             cursor: isDragging ? "grabbing" : "grab",
             userSelect: "none",

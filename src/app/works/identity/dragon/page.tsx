@@ -11,7 +11,7 @@ export default function Page() {
         height={830}
       />
 
-      <div className="max-w-[1193px] m-auto lg:mb-[173px] mb-[50px] px-[27px]">
+      <div className="max-w-[1193px] mx-auto lg:mb-[173px] mb-[50px] px-[27px]">
         <div className="flex gap-[35px] items-center">
           <h2 className="kharkiv inline-block px-6 py-2 mb-8 lg:text-[65px] text-[25px] font-normal font-heading">
             SMART DRAGON
@@ -25,26 +25,21 @@ export default function Page() {
           />
         </div>
 
-        <span className="font-montserrat font-semibold lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify">
-          «SMART DRAGON» -
-        </span>
-
-        <span className="lg:mb-[169px] mb-2 font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify">
+        {/* Опис */}
+        <p className="font-montserrat lg:text-[25px] text-[12px] leading-[1.2] text-justify">
+          <span className="font-semibold">«SMART DRAGON» — </span>
           це сучасна школа англійської мови, яка пропонує навчання як дітям, так
           і дорослим. Школа відома своїм інноваційним підходом до викладання
           англійської мови та широким вибором програм для всіх рівнів володіння
           мовою.
-        </span>
+        </p>
 
-        <div className="lg:mt-[30px] mt-[20px]">
-          <span className="font-montserrat font-semibold lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify">
-            Рішення -
-          </span>
-          <span className="lg:mb-[169px] mb-[50px] font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify">
-            головною мовою було створити абстрактний логотип із графічним
-            зображенням дракона.
-          </span>
-        </div>
+        {/* Рішення */}
+        <p className="font-montserrat lg:text-[25px] text-[12px] leading-[1.2] text-justify mt-[20px]">
+          <span className="font-semibold">Рішення — </span>
+          головною ідеєю було створити абстрактний логотип із графічним
+          зображенням дракона.
+        </p>
       </div>
 
       <Image
@@ -69,78 +64,76 @@ export default function Page() {
         height={600}
       />
 
-      <div className="lg:max-w-[1193px] m-auto mb-[91px] mt-[91px] px-[27px]">
-        <span className="font-montserrat font-semibold lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify">
-          Ідея:
-        </span>
-        <span className="mb-[169px] font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify">
-          логотип - це містичний та потужний символ, що втілює силу, інтелект та
-          мудрість. Крила дракона відображають віру у власні здібності. Такий
-          логотип лаконічний, простий та впізнаваний. Композиція символізує
-          силу, проникливість та доступність навчання.
-        </span>
+      <div className="lg:max-w-[1193px] mx-auto mt-[91px] mb-[91px] px-[27px]">
+        <p className="font-montserrat lg:text-[25px] text-[12px] leading-[1.2] text-justify">
+          <span className="font-semibold">Ідея:</span> логотип — це містичний та
+          потужний символ, що втілює силу, інтелект та мудрість. Крила дракона
+          відображають віру у власні здібності. Такий логотип лаконічний,
+          простий та впізнаваний. Композиція символізує силу, проникливість та
+          доступність навчання.
+        </p>
       </div>
 
       <div className="block lg:hidden">
         <Image
           className="w-full"
-          src="/dragon/d1.png"
+          src="/smr.jpg"
           alt=""
           width={1080}
           height={600}
         />
-        <Image
+        {/* <Image
           className="w-[216px] mx-auto my-[118px]"
           src="/dragon/d2.png"
           alt=""
           width={216}
           height={200}
-        />
+        /> */}
         <Image
           className="w-full"
-          src="/dragon/d3.png"
+          src="/smr1.jpg"
           alt=""
           width={1080}
           height={600}
         />
-        <Image
+        {/* <Image
           className="w-full"
           src="/dragon/d4.png"
           alt=""
           width={1080}
           height={600}
-        />
+        /> */}
         <Image
           className="w-full"
-          src="/dragon/d5.png"
+          src="/q.jpg"
           alt=""
           width={1080}
           height={600}
         />
-        <Image
+        {/* <Image
           className="w-[345px] my-[36px] mx-auto"
           src="/dragon/d6.png"
           alt=""
           width={345}
           height={250}
-        />
-        <Image
+        /> */}
+        {/* <Image
           className="w-full"
           src="/dragon/d7.png"
           alt=""
           width={1080}
           height={600}
-        />
+        /> */}
         <Image
           className="w-full"
-          src="/dragon/d8.png"
+          src="/s7.jpg"
           alt=""
           width={1080}
           height={600}
         />
         <Image
           className="w-full"
-          src="/dragon/d9.png"
+          src="/s8.jpg"
           alt=""
           width={1080}
           height={600}
@@ -154,7 +147,7 @@ export default function Page() {
         />
         <Image
           className="w-full"
-          src="/dragon/d11.png"
+          src="/s9.jpg"
           alt=""
           width={1080}
           height={600}

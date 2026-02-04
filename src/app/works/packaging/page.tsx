@@ -114,6 +114,7 @@ export default function Page() {
             scrollSnapType: "x mandatory",
             cursor: isDragging ? "grabbing" : "grab",
             userSelect: "none",
+            marginLeft: "5px",
           }}
         >
           {packagingItemsSmol.map((item, index) => (
