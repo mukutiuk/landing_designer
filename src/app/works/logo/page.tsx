@@ -36,25 +36,25 @@ const logos = [
 const logosS = [
   {
     href: "/works/identity/cocon",
-    image: "/lS.png",
+    image: "/m2.png",
     title: "ЛОГОТИП",
     subtitle: "HempActive",
   },
   {
     href: "/works/logo/boungainvillea",
-    image: "/lS1.png",
+    image: "/m1.png",
     title: "ЛОГОТИП",
     subtitle: "Boungainvillea",
   },
   {
     href: "/works/logo/lamma",
-    image: "/lS2.png",
+    image: "/L.png",
     title: "ЛОГОТИП",
     subtitle: "Lamma english",
   },
   {
     href: "/works/logo/iplantbasic",
-    image: "/lS3.png",
+    image: "/r1.png",
     title: "ЛОГОТИП",
     subtitle: "Iplantbasic",
   },
