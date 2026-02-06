@@ -15,11 +15,11 @@ export default function Page() {
         </div>
 
         <div className="flex w-full mb-[100px]  justify-center lg:justify-start">
-          <div className="flex gap-4 lg:flex-row flex-col lg:flex-2 ">
+          <div className="flex gap-4 lg:gap-0 lg:flex-row flex-col lg:flex-2 ">
             <div className="flex-1 relative p-6 text-center lg:text-[20px] text-[10px] min-w-[150px]">
               <div className="absolute left-4 right-4 top-0 h-[1px] bg-black" />
               <div className="absolute left-0 top-4 bottom-4 w-[1px] bg-black" />
-              <div className="absolute right-0 top-4 bottom-4 w-[1px] bg-black" />
+              <div className="absolute right-0 top-4 bottom-4 w-[1px] lg:w-0 bg-black" />
               багатозадачність
             </div>
 
@@ -34,7 +34,7 @@ export default function Page() {
           <div className="flex gap-4 lg:flex-row flex-col lg:flex-1">
             <div className="flex-1 relative p-6 lg:text-[20px] text-[10px] text-center min-w-[150px]">
               <div className="absolute left-4 right-4 top-0 h-[1px] bg-black" />
-              <div className="absolute left-0 top-4 bottom-4 w-[1px] xl:bg-black" />
+              <div className="absolute left-0 top-4 bottom-4  xl:bg-black" />
               <div className="absolute right-0 top-4 bottom-4 w-[1px] bg-black text-[10px]" />
               увага до деталей
             </div>
@@ -62,7 +62,7 @@ export default function Page() {
               />
             </div>
           </div>
-          <div className="flex lg:flex-row flex-col  items-center lg:items-start lg:gap-[61] gap-[22] w-full ">
+          <div className="flex lg:flex-row flex-col  items-center justify-between lg:items-start lg:gap-[61] gap-[22] w-full ">
             <div className="flex items-center  gap-3">
               <div className="rounded-xl border lg:w-[79px] lg:h-[79px] w-[46px] h-[46px] flex justify-center items-center border-gray-300 px-4 py-2">
                 <span className="text-[17px] lg:text-[35px] font-medium">
@@ -85,9 +85,9 @@ export default function Page() {
                 </p>
               </div>
             </div>
-            <div className="xl:ml-4  lg:text-[20px] text-[15px] text-[#838383] lg:text-right w-[290px]">
-              В роботі активно використовую інструментарій різні створила AI, те
-              це допомогає мені вольше AI.
+            <div className="xl:ml-4  lg:text-[20px] text-[15px] text-[#838383] lg:text-right lg:w-[526px]">
+              В роботі активно використовую різні сервіси Ai та на базовому
+              рівні володію Ae.
             </div>
           </div>
         </section>

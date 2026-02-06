@@ -74,6 +74,7 @@ export default function HeaderMUI() {
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
+        paddingTop: "15px",
       }}
     >
       <Box component="ul" sx={{ display: "flex", gap: "40px", p: 0, m: 0 }}>
@@ -120,7 +121,7 @@ export default function HeaderMUI() {
                     <Box
                       component="span"
                       sx={{
-                        fontSize: "13   px",
+                        fontSize: "13px",
                         textTransform: "uppercase",
                         letterSpacing: "1px",
                         gap: "30px",

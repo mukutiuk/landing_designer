@@ -33,7 +33,7 @@ export default function Page() {
           />
         </div>
 
-        <p className="lg:mb-[169px] mb-3 font-montserrat font-semibold lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify">
+        <p className="lg:mb-[15px] mb-3 font-montserrat font-semibold lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify">
           Cocon - це інтернет-магазин преміум-класу, який задовольняє вимоги
           найвибагливіших клієнтів.
         </p>
@@ -53,7 +53,7 @@ export default function Page() {
         <div className="flex items-center flex-col mb-[91px]">
           <span className="lg:text-[25px] text-[10px]">Фавікон</span>
           <Image
-            className="lg:h-[449px] lg:max-w[1039px] max-w-[221px]"
+            className="lg:h-[449px] lg:max-w-[1039px] max-w-[221px]"
             src="/cocon/cocon2.png"
             alt=""
             width={1039} // приблизна ширина
@@ -61,7 +61,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="flex lg:justify-between flex-col">
+        <div className="flex lg:justify-between flex-col lg:flex-row">
           <div className="flex items-center flex-col mb-[66px] lg:mb-[0]">
             <p className="font-normal lg:text-[25px] text-[10px] lg:mb-[87px] mb-[11px]">
               Основний логотип

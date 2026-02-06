@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function Page() {
   return (
     <main className="min-h-[calc(100vh)] bg-[#000] py-6 ">
-      <div className="text-white bg-black max-w-[1232px] mx-auto px-6">
+      <div className="text-white bg-black max-w-[1232px] mx-auto ">
         <div className="mb-10 mt-[132px]">
           <div className="flex  items-end w-full lg:gap-[76px] justify-between lg:justify-start">
-            <h1 className="text-[25px] lg:text-[65px] leading-[1.1] font-normal uppercase">
+            <h1 className="text-[25px] lg:text-[65px] leading-[1.1] font-normal uppercase kharkiv">
               Контакти <br />{" "}
               <span className="hidden lg:inline">для зв’язку</span>
             </h1>
@@ -25,7 +25,7 @@ export default function Page() {
             {/* Left */}
             <div className="gap-4 flex flex-col w-full">
               <p className="flex items-center gap-[45px] lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
-                <span className="font-bold">Telegram:</span>
+                <span className="font-bold block w-[139px]">Telegram:</span>
                 <a
                   href="https://t.me/Alina_Balachuk"
                   target="_blank"
@@ -37,7 +37,7 @@ export default function Page() {
               </p>
 
               <p className="flex items-center gap-[45px] lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
-                <span className="font-bold">Instagram:</span>
+                <span className="font-bold block w-[139px]">Instagram:</span>
                 <a
                   href="https://www.instagram.com/balachuk_dsgn"
                   target="_blank"
@@ -52,20 +52,23 @@ export default function Page() {
             <div className="w-[1px] border-r border-white hidden lg:block" />
 
             {/* Right */}
-            <div className="gap-4 flex flex-col w-full">
+            <div className="gap-4 flex flex-col w-full items-end">
               <p className="flex items-center lg:gap-[45px] justify-between lg:justify-start lg:text-[25px] text-[15px]">
-                <span className="font-bold">Email:</span>
+                <span className="font-bold w-[100px] block">Email:</span>
                 <a
                   href="mailto:alinabalachuk@gmail.com"
-                  className="hover:underline"
+                  className="hover:underline w-[338px] block"
                 >
                   alinabalachuk@gmail.com
                 </a>
               </p>
 
               <p className="flex items-center gap-[45px] lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
-                <span className="font-bold">Phone:</span>
-                <a href="tel:+380968219645" className="hover:underline">
+                <span className="font-bold w-[100px] block">Phone:</span>
+                <a
+                  href="tel:+380968219645"
+                  className="hover:underline w-[338px] block"
+                >
                   +(380) 968 219 645
                 </a>
               </p>
@@ -93,12 +96,12 @@ export default function Page() {
           <div className="flex lg:items-center lg:gap-[100px] gap-2 mt-4 flex-col lg:flex-row  lg:justify-between">
             {/* Behance */}
             <p className="flex items-center gap-[45px] lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
-              <span className="font-bold">Behance:</span>
+              <span className="font-bold block w-[139px]">Behance:</span>
               <a
                 href="https://www.behance.net/Alina_Balachuk"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="hover:underline "
               >
                 @Alina_Balachuk
               </a>
@@ -106,12 +109,12 @@ export default function Page() {
 
             {/* Inst */}
             <p className="flex items-center gap-[45px] lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
-              <span className="font-bold">Inst:</span>
+              <span className="font-bold w-[100px] block">Inst:</span>
               <a
                 href="https://www.instagram.com/balachuk_dsgn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline"
+                className="hover:underline w-[338px] block"
               >
                 @balachuk_dsgn
               </a>

@@ -113,7 +113,7 @@ export default function Page() {
   };
 
   return (
-    <main className="h-[calc(100vh-60px)] py-6 flex justify-center items-center px-2">
+    <main className="h-[calc(100vh)] py-6 flex justify-center items-center px-2">
       <section className="flex flex-col max-w-[1232px] w-full">
         {isMobile ? (
           <>
@@ -192,7 +192,7 @@ export default function Page() {
           </>
         ) : (
           /* ===== DESKTOP GRID ===== */
-          <div className="flex gap-[50px] justify-between">
+          <div className="flex gap-[50px] justify-between pt-[30px]">
             {logos.map((logo, index) => (
               <Link key={index} href={logo.href} className="w-[252px]">
                 <div className="relative w-[252px] h-[328px] mb-[50px]">

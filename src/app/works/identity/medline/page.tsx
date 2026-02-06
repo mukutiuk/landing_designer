@@ -115,7 +115,7 @@ export default function Page() {
           width={1920}
           height={600}
         />
-        <div className="flex w-full justify-center mb-[180px]">
+        <div className="flex w-full justify-center my-[180px]">
           <Image
             className="max-w-[945px] max-h-[437px]"
             src="/medline/medline3.png"

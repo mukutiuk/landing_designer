@@ -29,30 +29,34 @@ export default function Page() {
                 <p className="font-bold lg:text-[20px] text-[15px] lg:flex lg:flex-col block max-w-[220px] leading-[15px] lg:leading-[100%] lg:max-w-full">
                   Будь який односторонній макет{" "}
                   <span className="lg:text-[20px] text-[10px] font-normal leading-[12px] lg:leading-[25px] ">
-                    ( візитка, листівка, бірка, етикетка, запрошення, флаєр)
+                    (візитка, листівка, бірка, етикетка, запрошення, флаєр)
                   </span>
                 </p>
 
-                <p className=" kharkiv lg:text-[24px] text-[12px]">500 грн</p>
+                <p className=" kharkiv lg:text-[24px] text-[12px] text-black/50">
+                  500 грн
+                </p>
               </li>
               <li className="py-2  border-b border-black-200 flex items-center justify-between">
                 <p className="font-semibold lg:text-[20px] text-[15px] lg:flex lg:flex-col block max-w-[220px] leading-[15px] lg:leading-[100%] lg:max-w-full ">
                   Будь який двосторонній макет{" "}
                   <span className="lg:text-[20px] text-[10px] font-normal leading-[12px] lg:leading-[25px] ">
-                    ( візитка, листівка, бірка, етикетка, запрошення, флаєр)
+                    (візитка, листівка, бірка, етикетка, запрошення, флаєр)
                   </span>
                 </p>
-                <p className=" kharkiv lg:text-[24px] text-[12px]">800 грн</p>
+                <p className=" kharkiv lg:text-[24px] text-[12px] text-black/50">
+                  800 грн
+                </p>
               </li>
 
               <li className="py-2  border-b border-black-200 flex items-center justify-between">
                 <p className="font-bold lg:text-[20px] text-[15px] lg:flex lg:flex-col block max-w-[220px] leading-[15px] lg:leading-[100%] lg:max-w-full">
                   Багатосторінкова продукція{" "}
                   <span className="lg:text-[20px] text-[10px] font-normal leading-[12px] lg:leading-[25px] ">
-                    ( верстка здійснюється в Adobe in Design)
+                    (верстка здійснюється в Adobe in Design)
                   </span>
                 </p>
-                <p className=" kharkiv lg:text-[24px] text-[12px]">
+                <p className=" kharkiv lg:text-[24px] text-[12px] text-black/50">
                   140 грн/1 ст
                 </p>
               </li>
@@ -64,18 +68,20 @@ export default function Page() {
                     паковання)
                   </span>
                 </p>
-                <p className=" kharkiv lg:text-[24px] text-[12px]">500 грн</p>
+                <p className=" kharkiv text-black/50 lg:text-[24px] text-[12px]">
+                  500 грн
+                </p>
               </li>
 
               <li className="py-2  border-b border-black-200 items-center flex justify-between">
                 <p className="font-bold lg:text-[20px] text-[15px] lg:flex lg:flex-col block max-w-[220px] leading-[15px] lg:leading-[100%] lg:max-w-full">
                   Макети для соц мереж{" "}
-                  <span className="lg:text-[20px] text-[10px] font-normal leading-[12px] lg:leading-[25px] ">
+                  <span className="lg:text-[20px]  text-[10px] font-normal leading-[12px] lg:leading-[25px] ">
                     (якщо замовлення має шаблонний характер - розраховується
                     індивідуально)
                   </span>
                 </p>
-                <p className=" kharkiv lg:text-[24px] text-[12px] max-w-[97px]  lg:max-w-[397px] text-right">
+                <p className=" kharkiv text-black/50 lg:text-[24px] text-[12px] max-w-[97px]  lg:max-w-[397px] text-right">
                   300 грн/1 макет
                 </p>
               </li>
@@ -83,8 +89,8 @@ export default function Page() {
           </div>
 
           <div className="w-full flex flex-col justify-between items-end pt-6 lg:pt-0 lg:mt-[67px] mt-[57px]">
-            <div className=" flex flex-col lg:flex-row justify-center gap-4">
-              <p className=" text-[14px] font-normal  text-black/50">
+            <div className=" flex flex-col lg:flex-row justify-center gap-4 lg:gap-[67px]">
+              <p className=" text-[14px] font-normal  text-black/50 leading-[100%] tracking-[0] text-justify lg:min-w-[434px] lg:max-w-[434px]">
                 *У вартість входить передача всіх робочих файлів, файлів для
                 друку згідно загальних вимог ( чи за вимогами вашої поліграфії),
                 супровідного листа для поліграфії та презентації 2-3 варіантів
@@ -92,12 +98,12 @@ export default function Page() {
               </p>
 
               <div className="flex flex-col gap-4">
-                <p className="text-[14px] font-normal text-black/50">
+                <p className="text-[14px] font-normal  text-black/50 leading-[100%]">
                   *Якщо не знайшли потрібної позиції - напишіть мені і я уточню
                   чи виконую такі тз.
                 </p>
 
-                <p className="text-[14px] font-normal text-black/50">
+                <p className="text-[14px] font-normal  text-black/50 leading-[100%]">
                   *Я залишаю за собою право публікації проєкту у своєму
                   портфоліо чи соціальних мережах. Якщо ви категорично проти -
                   уточніть це на початку роботи.

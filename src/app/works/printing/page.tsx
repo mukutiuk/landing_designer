@@ -108,7 +108,7 @@ export default function Page() {
   };
 
   return (
-    <main className="h-[calc(100vh-60px)] py-6 flex justify-center items-center px-2">
+    <main className="h-[calc(100vh)] py-6 flex justify-center items-center px-2">
       <section className="flex flex-col max-w-[1232px] w-full">
         {/* Мобільний слайдер */}
         <Box

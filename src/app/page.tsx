@@ -2,9 +2,16 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className=" bg-[#fff] flex flex-col max-w-[1232px] mx-auto">
+    <div className=" bg-[#fff] flex flex-col max-w-[1232px] mx-auto mb-10">
       <section className="lg:mt-[118px] mt-[70px]  w-full bg-[#fff]/90 flex flex-col justify-center lg:min-h-[60vh] relative overflow-hidden mb-[100px] lg:mb-0">
-        <h1 className="text-[40px] sm:text-[80px] lg:text-[169px] font-normal text-center kharkiv  lg:text-left ">
+        <h1
+          className="  text-[40px] sm:text-[80px] lg:text-[144px]
+  font-normal
+  kharkiv
+  text-center lg:text-left
+  relative
+  -left-[6px] sm:-left-[8px] lg:-left-[12px] "
+        >
           PORTFOLIO
         </h1>
         <div className="lg:flex-row flex-col flex lg:gap-[68px] gap-[50px] lg:mt-[33px] mt-[10px]">
@@ -40,7 +47,7 @@ export default function Home() {
               Привіт!  Мене звати Аліна і я графічна дизайнерка. Кожен день я
               дізнаюся щось нове і вдосконалюю свої навички. 
             </p>
-            <p className="text-[15px]  lg:text-[20px]  font-normal mb-[25px] lg:mb-[100px] hidden lg:block">
+            <p className="text-[15px]  lg:text-[20px]  font-normal mb-[25px] lg:mb-[100px] hidden lg:block leading-[100%] tracking-[0] text-justify">
               Привіт! 
               <br /> Мене звати Аліна і я графічна дизайнерка зі Львова. Кожен
               день я дізнаюся щось нове і вдосконалюю свої навички. Обожнюю
@@ -48,10 +55,10 @@ export default function Home() {
               викликів.{" "}
             </p>
             <div className="  flex lg:gap-[67px] gap-[10px] justify-between items-center centers">
-              <div className="lg:w-[180px] flex lg:flex-col gap-2 items-center">
+              <div className="lg:w-[180px] flex lg:flex-col gap-2 items-left">
                 <p className="text-[25px] lg:text-[45px]  font-normal kharkiv">
                   {" "}
-                  1,5+
+                  2,5+
                 </p>
                 <p className="lg:text-[20px] text-[10px]">
                   років досвіду{" "}
@@ -59,7 +66,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="min-w-[1px] bg-[#000] self-stretch"></div>
-              <div className="lg:w-[250px] flex lg:flex-col gap-2 items-center">
+              <div className="lg:w-[250px] flex lg:flex-col gap-2 items-left">
                 <p className="text-[25px]  lg:text-[45px]   font-normal kharkiv">
                   20+
                 </p>

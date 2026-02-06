@@ -56,7 +56,7 @@ export default function Page() {
         height={600} // приблизно, підстав свій розмір
       />
 
-      {/* <div className="flex items-center flex-col">
+      <div className="flex items-center flex-col">
         <p className="lg:hidden text-[10px] mb-[35px]">Основний логотип</p>
         <Image
           className="lg:mb-[158px] mb-[64px] w-[249px] lg:w-[449px]"
@@ -79,13 +79,13 @@ export default function Page() {
           width={449}
           height={180} // підстав реальну пропорцію
         />
-      </div> */}
+      </div>
       <Image
         src="/immoral_3.jpg"
         alt=""
         width={390}
         height={800}
-        className="w-full"
+        className="w-full block lg:hidden"
       />
       {/* Мобільні зображення */}
       <div className="block lg:hidden">
@@ -193,13 +193,13 @@ export default function Page() {
           height={1080}
           className="w-full"
         />
-        <Image
+        {/* <Image
           src="/immortal/imm5.png"
           alt=""
           width={1920}
           height={1080}
           className="w-full"
-        />
+        /> */}
         <Image
           src="/immortal/imm6.png"
           alt=""
@@ -208,7 +208,7 @@ export default function Page() {
           className="w-full"
         />
 
-        <div className="flex justify-center">
+        <div className="flex justify-center my-[130px]">
           <Image
             className="max-w-[1223px]"
             src="/immortal/imm7.png"
@@ -226,7 +226,7 @@ export default function Page() {
           className="w-full"
         />
 
-        <div className="flex justify-center">
+        <div className="flex justify-center my-[130px]">
           <Image
             className="max-w-[1156px]"
             src="/immortal/imm9.png"

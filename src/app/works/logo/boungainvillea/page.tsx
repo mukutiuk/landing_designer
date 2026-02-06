@@ -105,7 +105,7 @@ export default function Page() {
         className="w-full"
       />
       <Image
-        src="/boungainvillea/b10.png"
+        src="/boungainvillea/b10.jpg"
         alt=""
         width={1920}
         height={1080}

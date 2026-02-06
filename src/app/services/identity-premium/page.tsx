@@ -4,12 +4,12 @@ import Link from "next/link";
 export default function Page() {
   return (
     <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[121px] mt-[160px] mb-16">
-      <div className="max-w-[1232px] lg:mx-auto min-h-[80vh] mx-[27px] lg:px-6 ">
+      <div className="max-w-[1232px] lg:mx-auto min-h-[80vh] mx-[27px] ">
         <div className="flex flex-col lg:flex-row lg:space-x-12">
           <div className="w-full lg:w-3/5">
             <div className="flex justify-between items-end mb-12 pb-2">
               <div className="flex flex-col justify-end">
-                <h1 className="lg:text-[65px] text-[25px] font-normal kharkiv">
+                <h1 className="lg:text-[65px] text-[25px] font-normal kharkiv leading-[0.95] lg:leading-[1]">
                   IDENTITY <br /> PREMIUM
                 </h1>
               </div>
@@ -70,12 +70,12 @@ export default function Page() {
                 Переглянути приклади робіт
               </Link>
             </div>
-            <div className="lg:max-w-[274px] flex flex-col justify-center ">
-              <p className=" text-[14px] font-normal lg:mb-12 mb-2 text-black/50">
+            <div className="lg:max-w-[321px] flex flex-col justify-center ">
+              <p className=" text-[14px] font-normal lg:mb-12 mb-2 text-black/50 leading-[100%] tracking-[0] text-justify">
                 *Носій - будь який макет поліграфії.
               </p>
 
-              <p className="text-[14px] font-normal text-black/50">
+              <p className="text-[14px] font-normal text-black/50 leading-[100%] tracking-[0] text-justify">
                 *Гайдбук - це pdf посібник, що містить правила та стандарти для
                 правильного використання фірмового стилю компанії, який включає
                 логотип, шрифти, кольори, графічні елементи та їх застосування
@@ -84,9 +84,9 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="text-right  mt-[100px] hidden lg:block">
+        <div className="text-right  mt-[90px] hidden lg:block">
           <h2 className="text-[24px] font-normal  text-black/50 kharkiv">
-            ЦІНА: ВІД 18 000 грн
+            ЦІНА: 18 000 грн
           </h2>
         </div>
         <div className="  mt-[58px] lg:hidden">

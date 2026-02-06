@@ -169,7 +169,7 @@ export default function Page() {
           width={1920}
           height={600}
         />
-        <div className="flex justify-center">
+        <div className="flex justify-center my-[130px]">
           <Image
             className="max-w-[1222px]"
             src="/dragon/dr5.png"

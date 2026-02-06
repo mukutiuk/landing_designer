@@ -2,13 +2,16 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[121px] mt-[100px]">
-      <div className="max-w-[1232px] lg:mx-auto min-h-[80vh] mx-[27px] lg:px-6">
+    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[221px] mt-[100px]">
+      <div className="max-w-[1232px] lg:mx-auto min-h-[80vh] mx-[27px] ">
         <div className="flex flex-col lg:space-x-12">
           <div className="w-full ">
             <div className="flex gap-[28px] items-center lg:mb-12 mb-6 pb-2">
-              <h1 className="lg:text-[65px] text-[25px] font-normal kharkiv">
-                ПОЛІГРАФІЯ
+              <h1
+                className="lg:text-[65px] text-[25px] font-normal kharkiv   relative
+  -left-[6px] sm:-left-[8px] lg:-left-[12px]"
+              >
+                ЕТАПИ РОБОТИ
               </h1>
               <div className="relative lg:h-[46px] lg:w-[46px] h-[24px] w-[24px]">
                 <Image

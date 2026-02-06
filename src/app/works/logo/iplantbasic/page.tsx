@@ -31,7 +31,7 @@ export default function Page() {
             IPLANTBASIC -
           </span>
 
-          <span className="font-montserrat font-normal text-[25px] leading-[100%] tracking-[0] text-justify mb-[169px]">
+          <span className="font-montserrat font-normal text-[25px] leading-[100%] tracking-[0] text-justify mb-[10px]">
             це інтернет-магазин у Об’єднаних Арабських Еміратах, який пропонує
             100% рослинні (plant-based) продукти харчування для веганів,
             вегетаріанців, флекситаріанців і всіх, хто хоче харчуватися
@@ -54,7 +54,7 @@ export default function Page() {
         height={1080}
       />
 
-      <div className="flex justify-center">
+      <div className="flex justify-center my-[150px]">
         <Image
           className="max-w-[791px]"
           src="/iplantbasic/ip1.png"

@@ -113,7 +113,7 @@ export default function Page() {
   };
 
   return (
-    <main className="py-6 px-2 lg:mt-[235px]">
+    <main className="h-[calc(100vh)] py-6 flex justify-center items-center px-2">
       <section className="max-w-[1232px] mx-auto w-full">
         {/* ===== MOBILE SLIDER ===== */}
         <Box
