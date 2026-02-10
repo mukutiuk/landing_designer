@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div>
       <Image
-        className="lg:h-[830px] mt-[100px] w-full lg:mb-[135px] mb-[37px]"
+        className="lg:h-[830px] mt-[100px] lg:mt-0 w-full lg:mb-[135px] mb-[37px]"
         src="/pizza/p1.png"
         alt="Головна ілюстрація LLAMA English"
         width={1920}

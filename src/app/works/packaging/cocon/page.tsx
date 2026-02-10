@@ -4,8 +4,8 @@ export default function Page() {
   return (
     <div>
       <Image
-        className="lg:h-[830px] mt-[100px] w-full lg:mb-[135px] mb-[37px] "
-        src="/co/co1.png"
+        className="lg:h-[830px] lg:mt-0 mt-[100px] w-full lg:mb-[135px] mb-[37px] "
+        src="/co/i1.jpg"
         alt="Головна ілюстрація LLAMA English"
         width={1420}
         height={830}
@@ -27,7 +27,7 @@ export default function Page() {
         </div>
 
         <div className="flex flex-wrap items-baseline gap-x-3">
-          <span className="font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] text-left tracking-[0] lg:text-justify lg:mb-[70px] ">
+          <span className="font-normal lg:text-[25px] text-[12px] leading-[1.2] hyphens-auto  text-justify lg:mb-[70px] ">
             Коробка виконана з щільного текстурованого картону фірмового кольору
             Dark violet та має тиснення золотою фольгою. Для упапування
             використовують брендовану коробку + папір тіш’ю молочного кольору з
@@ -37,21 +37,21 @@ export default function Page() {
       </div>
       <Image
         className="w-full  lg:block"
-        src="/co/co2.png"
+        src="/co/i2.jpg"
         alt=""
         width={1920}
         height={1080}
       />
       <Image
         className="w-full  lg:block"
-        src="/co/co3.png"
+        src="/co/i3.jpg"
         alt=""
         width={1920}
         height={1080}
       />{" "}
       <Image
         className="w-full hidden lg:block"
-        src="/co/co4.png"
+        src="/co/i4.jpg"
         alt=""
         width={1920}
         height={1080}

@@ -44,25 +44,25 @@ export default function Page() {
   const packagingItems = [
     {
       href: "/works/packaging/honey",
-      image: "/pakink-1.png",
+      image: "/z1.jpg",
       title: "Етикетка",
       description: "для соняшникового меду",
     },
     {
       href: "/works/packaging/ointment",
-      image: "/packing-2s.png",
+      image: "/z2.jpg",
       title: "ЕТИКЕТКА+КОРОБКА",
       description: "для регенеруючої мазі",
     },
     {
       href: "/works/packaging/oil",
-      image: "/packing-3s.png",
+      image: "/z3.jpg",
       title: "ЕТИКЕТКА+КОРОБКА",
       description: "серія упаковаль для олій",
     },
     {
       href: "/works/packaging/cocon",
-      image: "/packing-4s.png",
+      image: "/z4.jpg",
       title: "АЙДЕНТИКА",
       description: "Cocon luxe",
     },
@@ -71,26 +71,26 @@ export default function Page() {
   const packagingItemsSmol = [
     {
       href: "/works/packaging/honey",
-      image: "/p1S.png",
+      image: "/z1.jpg",
       title: "Етикетка",
       description: "для соняшникового меду",
     },
     {
       href: "/works/packaging/ointment",
 
-      image: "/packing-2s.png",
+      image: "/z2.jpg",
       title: "ЕТИКЕТКА+КОРОБКА",
       description: "для регенеруючої мазі",
     },
     {
       href: "/works/packaging/oil",
-      image: "/packing-3s.png",
+      image: "/z3.jpg",
       title: "ЕТИКЕТКА+КОРОБКА",
       description: "серія упаковаль для олій",
     },
     {
       href: "/works/packaging/cocon",
-      image: "/packing-4s.png",
+      image: "/z4.jpg",
       title: "АЙДЕНТИКА",
       description: "Cocon luxe",
     },
@@ -99,7 +99,6 @@ export default function Page() {
   return (
     <main className="h-[calc(100vh)] py-6 flex justify-center items-center px-2">
       <section className="max-w-[1232px] mx-auto w-full">
-        {/* ===== MOBILE SLIDER ===== */}
         <Box
           ref={sliderRef}
           onScroll={handleScroll}

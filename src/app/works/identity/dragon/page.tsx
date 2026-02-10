@@ -25,7 +25,6 @@ export default function Page() {
           />
         </div>
 
-        {/* Опис */}
         <p className="font-montserrat lg:text-[25px] text-[12px] leading-[1.2] text-justify">
           <span className="font-semibold">«SMART DRAGON» — </span>
           це сучасна школа англійської мови, яка пропонує навчання як дітям, так
@@ -34,7 +33,6 @@ export default function Page() {
           мовою.
         </p>
 
-        {/* Рішення */}
         <p className="font-montserrat lg:text-[25px] text-[12px] leading-[1.2] text-justify mt-[20px]">
           <span className="font-semibold">Рішення — </span>
           головною ідеєю було створити абстрактний логотип із графічним
@@ -82,13 +80,7 @@ export default function Page() {
           width={1080}
           height={600}
         />
-        {/* <Image
-          className="w-[216px] mx-auto my-[118px]"
-          src="/dragon/d2.png"
-          alt=""
-          width={216}
-          height={200}
-        /> */}
+
         <Image
           className="w-full"
           src="/smr1.jpg"
@@ -96,13 +88,7 @@ export default function Page() {
           width={1080}
           height={600}
         />
-        {/* <Image
-          className="w-full"
-          src="/dragon/d4.png"
-          alt=""
-          width={1080}
-          height={600}
-        /> */}
+
         <Image
           className="w-full"
           src="/q.jpg"
@@ -110,20 +96,7 @@ export default function Page() {
           width={1080}
           height={600}
         />
-        {/* <Image
-          className="w-[345px] my-[36px] mx-auto"
-          src="/dragon/d6.png"
-          alt=""
-          width={345}
-          height={250}
-        /> */}
-        {/* <Image
-          className="w-full"
-          src="/dragon/d7.png"
-          alt=""
-          width={1080}
-          height={600}
-        /> */}
+
         <Image
           className="w-full"
           src="/s7.jpg"

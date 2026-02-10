@@ -4,8 +4,8 @@ export default function Page() {
   return (
     <div>
       <Image
-        className="lg:h-[830px] mt-[90px] w-full lg:mb-[135px] mb-[37px] "
-        src="/ointment/o1.png"
+        className="lg:h-[830px] mt-[90px] lg:mt-0 w-full lg:mb-[135px] mb-[37px] "
+        src="/ointment/i1.jpg"
         alt="Головна ілюстрація LLAMA English"
         width={1420}
         height={830}
@@ -27,7 +27,7 @@ export default function Page() {
         </div>
 
         <div className="flex flex-wrap items-baseline gap-x-3">
-          <span className="font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] text-left tracking-[0] lg:text-justify lg:mb-[70px] ">
+          <span className="font-normal lg:text-[25px] text-[12px] leading-[1.2] hyphens-auto  text-justify lg:mb-[70px] ">
             Упакування мазі виконана з щільного текстурованого картону білого
             кольору. Етикетка виконана з матового паперу. Дизайн з використання
             графічних ілюстрацій коноплі на бічних сторонах. На лицевій стороні
@@ -39,21 +39,21 @@ export default function Page() {
       </div>
       <Image
         className="w-full  lg:block"
-        src="/ointment/o2.png"
+        src="/ointment/i2.jpg"
         alt=""
         width={1920}
         height={1080}
       />
       <Image
         className="w-full  lg:block"
-        src="/ointment/o3.png"
+        src="/ointment/i3.jpg"
         alt=""
         width={1920}
         height={1080}
       />{" "}
       <Image
         className="w-full hidden lg:block"
-        src="/ointment/o4.png"
+        src="/ointment/i4.jpg"
         alt=""
         width={1920}
         height={1080}
@@ -67,32 +67,25 @@ export default function Page() {
       />
       <Image
         className="w-full hidden lg:block "
-        src="/ointment/o5.png"
+        src="/ointment/i5.jpg"
         alt=""
         width={1920}
         height={1080}
       />
       <Image
         className="w-full lg:hidden"
-        src="/ointment/os1.png"
+        src="/ointment/w.jpg"
         alt=""
         width={1920}
         height={1080}
       />{" "}
       <Image
         className="w-full lg:hidden"
-        src="/ointment/os2.png"
+        src="/ointment/w1.jpg"
         alt=""
         width={1920}
         height={1080}
       />
-      {/* <Image
-        className="w-full  lg:hidden"
-        src="/co/S1.png"
-        alt=""
-        width={1920}
-        height={1080}
-      /> */}
     </div>
   );
 }

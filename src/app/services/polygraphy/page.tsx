@@ -2,12 +2,16 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[121px] mt-[160px] mb-16">
-      <div className="max-w-[1232px] lg:mx-auto min-h-[80vh] mx-[27px] lg:px-6">
+    <div className="h-[calc(100vh-60px - 21px)]  lg:pt-[170px] pt-[160px] mb-16">
+      <div className="max-w-[1232px] lg:mx-auto min-h-[80vh] mx-[27px] ">
         <div className="flex flex-col lg:space-x-12">
           <div className="w-full ">
-            <div className="flex justify-between items-center mb-12 pb-2">
-              <h1 className="lg:text-[65px] text-[25px] font-normal kharkiv">
+            <div className="flex justify-between items-center mb-10 pb-2">
+              <h1
+                className="lg:text-[65px] text-[25px] font-normal kharkiv py-0 text-indent
+letter-spacing
+word-spacing"
+              >
                 ПОЛІГРАФІЯ
               </h1>
               <Image
@@ -19,7 +23,7 @@ export default function Page() {
               />
               <a
                 href="#"
-                className="text-[10px] kharkiv  font-normal pb-1 border-b border-black-200 text-left   hover:text-black transition duration-200 lg:hidden max-w-[123px"
+                className="text-[10px] kharkiv  font-normal pb-1 border-b border-black-200 text-right leading-[100%]  hover:text-black transition duration-200 lg:hidden max-w-[123px]"
               >
                 Переглянути <br /> приклади робіт
               </a>

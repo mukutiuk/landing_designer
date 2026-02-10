@@ -98,13 +98,6 @@ export default function Page() {
           width={1080}
           height={600}
         />
-        {/* <Image
-          className="w-full"
-          src="/medline/m11.png"
-          alt=""
-          width={1080}
-          height={600}
-        /> */}
       </div>
 
       <div className="hidden lg:block">
@@ -148,13 +141,6 @@ export default function Page() {
         <Image
           className="w-full"
           src="/medline/medline7.png"
-          alt=""
-          width={1920}
-          height={600}
-        />
-        <Image
-          className="w-full"
-          src="/medline/medline8.png"
           alt=""
           width={1920}
           height={600}

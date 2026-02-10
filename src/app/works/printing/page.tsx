@@ -8,52 +8,25 @@ import { useRef, useState } from "react";
 
 const poligrafItems = [
   {
-    image: "/p3.png",
+    image: "/I1.jpg",
     title: "ЛИСТІВКИ",
     description: "для бренду декору",
     href: "/works/printing/belove",
   },
   {
-    image: "/p2.png",
+    image: "/I2.jpg",
     title: "СЕРТИФІКАТ",
     description: "для фотографа",
     href: "/works/printing/certificate",
   },
   {
-    image: "/p1.png",
+    image: "/I3.jpg",
     title: "ЛИСТІВКИ",
     description: "для дня народження",
     href: "/works/printing/postcard",
   },
   {
-    image: "/poligraf-4.png",
-    title: "МЕНЮ",
-    description: "для закладу харчування",
-    href: "/works/printing/pizza",
-  },
-];
-
-const poligrafItemsS = [
-  {
-    image: "/I1.png",
-    title: "ЛИСТІВКИ",
-    description: "для бренду декору",
-    href: "/works/printing/belove",
-  },
-  {
-    image: "/I2.png",
-    title: "СЕРТИФІКАТ",
-    description: "для фотографа",
-    href: "/works/printing/certificate",
-  },
-  {
-    image: "/I3.png",
-    title: "ЛИСТІВКИ",
-    description: "для дня народження",
-    href: "/works/printing/postcard",
-  },
-  {
-    image: "/I4.png",
+    image: "/I4.jpg",
     title: "МЕНЮ",
     description: "для закладу харчування",
     href: "/works/printing/pizza",
@@ -68,11 +41,13 @@ export default function Page() {
   const [scrollLeft, setScrollLeft] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const SLIDE_WIDTH = 402 + 16; // ширина слайда + gap
+  const SLIDE_WIDTH = 402;
+  const GAP = 20;
+  const FULL_SLIDE_WIDTH = SLIDE_WIDTH + GAP;
 
   const handleScroll = () => {
     if (!sliderRef.current) return;
-    const index = Math.round(sliderRef.current.scrollLeft / SLIDE_WIDTH);
+    const index = Math.round(sliderRef.current.scrollLeft / FULL_SLIDE_WIDTH);
     setActiveIndex(index);
   };
 
@@ -83,8 +58,6 @@ export default function Page() {
     setScrollLeft(sliderRef.current.scrollLeft);
   };
 
-  const handleMouseUp = () => setIsDragging(false);
-
   const handleMouseMove = (e: React.MouseEvent) => {
     if (!isDragging || !sliderRef.current) return;
     e.preventDefault();
@@ -92,6 +65,8 @@ export default function Page() {
     const walk = (x - startX) * 2;
     sliderRef.current.scrollLeft = scrollLeft - walk;
   };
+
+  const stopDragging = () => setIsDragging(false);
 
   const handleTouchStart = (e: React.TouchEvent) => {
     if (!sliderRef.current) return;
@@ -110,55 +85,46 @@ export default function Page() {
   return (
     <main className="h-[calc(100vh)] py-6 flex justify-center items-center px-2">
       <section className="flex flex-col max-w-[1232px] w-full">
-        {/* Мобільний слайдер */}
         <Box
           ref={sliderRef}
           onScroll={handleScroll}
           onMouseDown={handleMouseDown}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
           onMouseMove={handleMouseMove}
+          onMouseUp={stopDragging}
+          onMouseLeave={stopDragging}
           onTouchStart={handleTouchStart}
-          onTouchEnd={handleMouseUp}
           onTouchMove={handleTouchMove}
+          onTouchEnd={stopDragging}
           sx={{
             display: { xs: "flex", md: "none" },
+            gap: `${GAP}px`,
             overflowX: "auto",
-            gap: 2,
-            marginLeft: "5px",
             scrollSnapType: "x mandatory",
+            scrollBehavior: "smooth",
+            px: 2,
+            pb: 2,
             cursor: isDragging ? "grabbing" : "grab",
             userSelect: "none",
-            "&::-webkit-scrollbar": {
-              height: 8,
-            },
-            "&::-webkit-scrollbar-track": {
-              backgroundColor: "#f1f1f1",
-              borderRadius: 4,
-            },
-            "&::-webkit-scrollbar-thumb": {
-              backgroundColor: "#888",
-              borderRadius: 4,
-            },
+            marginLeft: "5px",
           }}
         >
-          {poligrafItemsS.map((item, index) => (
+          {poligrafItems.map((item, index) => (
             <Box
               key={index}
               sx={{
-                flex: "0 0 402px",
+                flexShrink: 0,
+                width: `${SLIDE_WIDTH}px`,
                 scrollSnapAlign: "start",
               }}
             >
-              <Link href={item.href} className="block">
+              <Link href={item.href}>
                 <div className="relative w-[402px] h-[528px] mb-[50px]">
                   <Image
-                    src={item.image || "/placeholder.svg"}
+                    src={item.image}
                     alt={`${item.title} — ${item.description}`}
                     fill
                     className="object-cover pointer-events-none"
                     draggable={false}
-                    sizes="402px"
                   />
                 </div>
 
@@ -173,15 +139,14 @@ export default function Page() {
                   />
                 </div>
 
-                <p className="font-normal text-[18px]">{item.description}</p>
+                <p className="text-[18px] font-normal">{item.description}</p>
               </Link>
             </Box>
           ))}
         </Box>
 
-        {/* ІНДИКАТОР */}
         <div className="flex justify-center gap-2 mt-4 md:hidden">
-          {poligrafItemsS.map((_, index) => (
+          {poligrafItems.map((_, index) => (
             <span
               key={index}
               className={`h-2 rounded-full transition-all duration-300 ${
@@ -191,17 +156,15 @@ export default function Page() {
           ))}
         </div>
 
-        {/* Десктопна сітка */}
-        <div className="hidden md:flex gap-[50px] justify-between">
+        <div className="hidden md:flex gap-[50px] justify-between pt-[30px]">
           {poligrafItems.map((item, index) => (
             <Link key={index} href={item.href} className="w-[252px]">
               <div className="relative w-[252px] h-[328px] mb-[50px]">
                 <Image
-                  src={item.image || "/placeholder.svg"}
+                  src={item.image}
                   alt={`${item.title} — ${item.description}`}
                   fill
                   className="object-cover"
-                  sizes="252px"
                 />
               </div>
 
@@ -216,7 +179,7 @@ export default function Page() {
                 />
               </div>
 
-              <p className="font-normal text-[18px]">{item.description}</p>
+              <p className="text-[18px] font-normal">{item.description}</p>
             </Link>
           ))}
         </div>

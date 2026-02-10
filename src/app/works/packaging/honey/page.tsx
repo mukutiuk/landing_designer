@@ -4,15 +4,15 @@ export default function Page() {
   return (
     <div>
       <Image
-        className="lg:h-[830px] mt-[100px] w-full lg:mb-[135px] mb-[37px]"
-        src="/honey/pL.png"
+        className="lg:h-[830px] mt-[100px] lg:mt-0 w-full lg:mb-[135px] mb-[37px]"
+        src="/honey/p1.jpg"
         alt="Головна ілюстрація LLAMA English"
         width={2920}
         height={830}
         priority
       />
 
-      <div className="max-w-[1193px] m-auto  mb-[31px] px-[27px]">
+      <div className="max-w-[1193px] m-auto  mb-[31px] lg:mb-[131px] px-[27px]">
         <div className="flex gap-[35px] items-center">
           <h2 className="kharkiv nline-block   px-6 py-2 mb-8 lg:text-[65px] text-[25px] font-normal">
             ЕТИКЕТКА
@@ -28,7 +28,7 @@ export default function Page() {
         </div>
 
         <div className="flex flex-wrap items-baseline gap-x-3">
-          <span className="font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] text-left tracking-[0] lg:text-justify lg:mb-[70px] ">
+          <span className="font-normal lg:text-[25px] text-[12px] leading-[1.2] hyphens-auto  text-justify">
             Етикетка для соняшникового меду з чітким акцентом на натуральність
             продукту. Поєднання класичних бджолярських мотивів і сучасної,
             акуратної тектсової верстки. Колірна гама: медово-жовтий, чорний,
@@ -40,7 +40,7 @@ export default function Page() {
 
       <Image
         className="w-full "
-        src="/honey/pl1.png"
+        src="/honey/p2.jpg"
         alt=""
         width={1920}
         height={1080}
@@ -48,7 +48,7 @@ export default function Page() {
       />
       <Image
         className="w-full "
-        src="/honey/pl2.png"
+        src="/honey/p3.jpg"
         alt=""
         width={1920}
         height={1080}

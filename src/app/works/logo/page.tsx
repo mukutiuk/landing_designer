@@ -8,34 +8,7 @@ import { useRef, useState } from "react";
 
 const logos = [
   {
-    href: "/works/identity/cocon",
-    image: "/logo1.png",
-    title: "ЛОГОТИП",
-    subtitle: "HempActive",
-  },
-  {
-    href: "/works/logo/boungainvillea",
-    image: "/logo2.png",
-    title: "ЛОГОТИП",
-    subtitle: "Boungainvillea",
-  },
-  {
-    href: "/works/logo/lamma",
-    image: "/logo3.png",
-    title: "ЛОГОТИП",
-    subtitle: "Lamma english",
-  },
-  {
-    href: "/works/logo/iplantbasic",
-    image: "/logo4.png",
-    title: "ЛОГОТИП",
-    subtitle: "Iplantbasic",
-  },
-];
-
-const logosS = [
-  {
-    href: "/works/identity/cocon",
+    href: "/works/logo/hemp-active",
     image: "/m2.png",
     title: "ЛОГОТИП",
     subtitle: "HempActive",
@@ -141,7 +114,7 @@ export default function Page() {
                 marginLeft: "5px",
               }}
             >
-              {logosS.map((logo, index) => (
+              {logos.map((logo, index) => (
                 <Box
                   key={index}
                   sx={{
@@ -178,9 +151,8 @@ export default function Page() {
               ))}
             </Box>
 
-            {/* ===== DOTS INDICATOR ===== */}
             <div className="flex justify-center gap-2 mt-4">
-              {logosS.map((_, index) => (
+              {logos.map((_, index) => (
                 <span
                   key={index}
                   className={`h-2 rounded-full transition-all duration-300 ${
@@ -191,7 +163,6 @@ export default function Page() {
             </div>
           </>
         ) : (
-          /* ===== DESKTOP GRID ===== */
           <div className="flex gap-[50px] justify-between pt-[30px]">
             {logos.map((logo, index) => (
               <Link key={index} href={logo.href} className="w-[252px]">

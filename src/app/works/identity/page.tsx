@@ -15,33 +15,6 @@ const identityItems = [
   },
   {
     href: "/works/identity/immortal",
-    image: "/logo-2.png",
-    title: "АЙДЕНТИКА",
-    description: "Immortal english school",
-  },
-  {
-    href: "/works/identity/medline",
-    image: "/logo-3.svg",
-    title: "АЙДЕНТИКА",
-    description: "Medline nails school/stuio",
-  },
-  {
-    href: "/works/identity/dragon",
-    image: "/logo-4.png",
-    title: "АЙДЕНТИКА",
-    description: "Smart dragon english school",
-  },
-];
-
-const identityItemsS = [
-  {
-    href: "/works/identity/cocon",
-    image: "/logo-1.svg",
-    title: "АЙДЕНТИКА",
-    description: "Сocon Luxe lingerie store",
-  },
-  {
-    href: "/works/identity/immortal",
     image: "/immoral.jpg",
     title: "АЙДЕНТИКА",
     description: "Immortal english school",
@@ -133,7 +106,7 @@ export default function Page() {
             marginLeft: "5px",
           }}
         >
-          {identityItemsS.map((item, index) => (
+          {identityItems.map((item, index) => (
             <Box
               key={index}
               sx={{
@@ -172,7 +145,7 @@ export default function Page() {
 
         {/* ===== DOTS INDICATOR ===== */}
         <div className="flex justify-center gap-2 mt-4 lg:hidden">
-          {identityItemsS.map((_, index) => (
+          {identityItems.map((_, index) => (
             <span
               key={index}
               className={`h-2 rounded-full transition-all duration-300 ${

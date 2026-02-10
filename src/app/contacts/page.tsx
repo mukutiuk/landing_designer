@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <main className="min-h-[calc(100vh)] bg-[#000] py-6 ">
+    <main className="min-h-[calc(100vh)] bg-[#000] p-6 ">
       <div className="text-white bg-black max-w-[1232px] mx-auto ">
         <div className="mb-10 mt-[132px]">
           <div className="flex  items-end w-full lg:gap-[76px] justify-between lg:justify-start">
@@ -36,7 +36,7 @@ export default function Page() {
                 </a>
               </p>
 
-              <p className="flex items-center gap-[45px] lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
+              <p className="flex items-center gap-[45px] w-full lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
                 <span className="font-bold block w-[139px]">Instagram:</span>
                 <a
                   href="https://www.instagram.com/balachuk_dsgn"
@@ -52,18 +52,18 @@ export default function Page() {
             <div className="w-[1px] border-r border-white hidden lg:block" />
 
             {/* Right */}
-            <div className="gap-4 flex flex-col w-full items-end">
+            <div className="gap-4 flex flex-col w-full lg:items-end">
               <p className="flex items-center lg:gap-[45px] justify-between lg:justify-start lg:text-[25px] text-[15px]">
                 <span className="font-bold w-[100px] block">Email:</span>
                 <a
                   href="mailto:alinabalachuk@gmail.com"
-                  className="hover:underline w-[338px] block"
+                  className="hover:underline lg:w-[338px] block"
                 >
                   alinabalachuk@gmail.com
                 </a>
               </p>
 
-              <p className="flex items-center gap-[45px] lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
+              <p className="hidden lg:flex items-center gap-[45px] lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
                 <span className="font-bold w-[100px] block">Phone:</span>
                 <a
                   href="tel:+380968219645"
@@ -108,13 +108,13 @@ export default function Page() {
             </p>
 
             {/* Inst */}
-            <p className="flex items-center gap-[45px] lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
+            <p className="flex  items-center gap-[45px] lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
               <span className="font-bold w-[100px] block">Inst:</span>
               <a
                 href="https://www.instagram.com/balachuk_dsgn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline w-[338px] block"
+                className="hover:underline w-[338px] block text-right"
               >
                 @balachuk_dsgn
               </a>

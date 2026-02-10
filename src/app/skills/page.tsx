@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <section className="w-full bg-white  lg:px-8 lg:max-w-[1232px] lg:mx-auto mt-24 lg:mt-[224px] py-12">
+    <section className="w-full bg-white  lg:max-w-[1232px] lg:mx-auto mt-24 lg:mt-[124px] py-12">
       {/* Text section */}
       <div className="flex-1  w-full  ">
         <div className="flex lg:gap-[35px] gap-[68px] items-center mb-[26px] justify-center lg:justify-start">
@@ -80,12 +80,14 @@ export default function Page() {
                 </span>
               </div>
               <div className="rounded-xl lg:border lg:border-gray-300 px-4 lg:py-2 lg:w-[226px] lg:h-[79px] flex justify-center items-center">
-                <p className="lg:w-[226px] w-[95px]  text-[15px] lg:text-[25px] font-medium text-right">
-                  + Figma/Canva
+                <p className="lg:w-[226px] w-[100px]  text-[15px] lg:text-[25px] font-medium text-right">
+                  + Figma
+                  <br className="lg:hidden" />
+                  /Canva
                 </p>
               </div>
             </div>
-            <div className="xl:ml-4  lg:text-[20px] text-[15px] text-[#838383] lg:text-right lg:w-[526px]">
+            <div className="xl:ml-4  w-[301px]  lg:text-[20px] text-[15px] text-[#838383] lg:text-right lg:w-[526px]">
               В роботі активно використовую різні сервіси Ai та на базовому
               рівні володію Ae.
             </div>

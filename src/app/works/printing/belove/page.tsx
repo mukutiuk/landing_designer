@@ -35,43 +35,66 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row">
+      <div className=" flex-col lg:flex-row hidden lg:flex">
         <Image
-          className="w-full "
-          src="/belove/be2.png"
+          className="w-full lg:w-1/2 object-cover"
+          src="/belove/i1.jpg"
           alt=""
-          width={1920}
-          height={1080}
-        />{" "}
+          width={720}
+          height={976}
+        />
         <Image
-          className="w-full "
-          src="/belove/be3.png"
+          className="w-full lg:w-1/2 object-cover"
+          src="/belove/i2.jpg"
           alt=""
-          width={1920}
-          height={1080}
+          width={720}
+          height={976}
         />
       </div>
 
-      <div className="flex flex-col lg:flex-row">
+      <Image
+        className="w-fullobject-cover lg:hidden"
+        src="/belove/p1.jpg"
+        alt=""
+        width={720}
+        height={976}
+      />
+
+      <Image
+        className="w-fullobject-cover lg:hidden"
+        src="/belove/p2.jpg"
+        alt=""
+        width={720}
+        height={976}
+      />
+      <Image
+        className="w-fullobject-cover lg:hidden"
+        src="/belove/p3.jpg"
+        alt=""
+        width={720}
+        height={976}
+      />
+
+      <div className=" flex-col lg:flex-row hidden lg:flex">
         <Image
-          className="w-full "
-          src="/belove/be4.png"
+          className="w-full lg:w-1/2 object-cover"
+          src="/belove/i3.jpg"
           alt=""
-          width={1920}
-          height={1080}
-        />{" "}
+          width={720}
+          height={976}
+        />
         <Image
-          className="w-full  hidden lg:block"
-          src="/belove/be5.png"
+          className="w-full lg:w-1/2 object-cover"
+          src="/belove/i4.jpg"
           alt=""
-          width={1920}
-          height={1080}
+          width={720}
+          height={976}
         />
       </div>
 
       <Image
         className="w-full hidden lg:block"
-        src="/belove/be6.png"
+        src="/belove/i5.jpg"
         alt=""
         width={1920}
         height={1080}

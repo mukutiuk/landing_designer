@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[141px] mt-[160px] mb-16">
+    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[160px] mt-[160px] mb-16">
       <div className="max-w-[1232px] lg:mx-auto min-h-[80vh] mx-[27px] ">
         <div className="flex flex-col lg:flex-row lg:space-x-12">
           <div className="w-full lg:w-3/5">
-            <div className="flex justify-between items-center mb-12 pb-2">
+            <div className="flex justify-between items-center mb-10 pb-2">
               <h1 className="lg:text-[65px] text-[25px] font-normal kharkiv">
                 LOGO
               </h1>
@@ -109,7 +109,7 @@ export default function Page() {
           </div>
         </div>
         <div className="text-right  mt-[98px] hidden lg:block">
-          <h2 className="text-[24px] font-normal  text-black/50">
+          <h2 className="text-[24px] font-normal  text-black/50 kharkiv">
             ЦІНА: 7 000 ГРН
           </h2>
         </div>

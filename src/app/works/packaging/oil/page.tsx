@@ -4,8 +4,8 @@ export default function Page() {
   return (
     <div>
       <Image
-        className="lg:h-[830px] mt-[90px] w-full lg:mb-[135px] mb-[37px] "
-        src="/oil/oL.png"
+        className="lg:h-[830px] lg:mt-0 mt-[90px] w-full lg:mb-[135px] mb-[37px] "
+        src="/oil/i1.jpg"
         alt="Головна ілюстрація LLAMA English"
         width={1420}
         height={830}
@@ -27,7 +27,7 @@ export default function Page() {
         </div>
 
         <div className="flex flex-wrap items-baseline gap-x-3 lg:mb-0 mb-[64px]">
-          <span className="font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] text-left tracking-[0] lg:text-justify lg:mb-[70px] ">
+          <span className="font-normal lg:text-[25px] text-[12px] leading-[1.2] hyphens-auto  text-justify lg:mb-[70px] ">
             Преміальні упаковки для CBD-олій, які позиціонується як натуральний
             продукт для здоров’я та добробуту. Візуальна мова говорить про
             довіру, чистоту, сучасність та професійність.
@@ -38,7 +38,7 @@ export default function Page() {
           <span className="font-bold text-[12px] lg:text-[25px] mb-2 lg:mb-0">
             Упаковка для серії Сare Nutrition 30мл
           </span>
-          <span className="font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] text-left tracking-[0] lg:text-justify lg:mb-[70px] ">
+          <span className="font-normal lg:text-[25px] text-[12px] leading-[1.2] hyphens-auto  text-justify lg:mb-[70px] ">
             Кожна з одиниць має індивідуально розроблений емоцію персонажу Care
             Baву та індивідуальний колір. Графічний герой - капелька, виконана в
             одному кольорі, що дозволяє зосередити увагу на емоціях героя та
@@ -53,7 +53,7 @@ export default function Page() {
         <div className="lg:w-[1117px] lg:h-[745px] w-[312px] h-[208px]">
           <Image
             className="w-full hidden  lg:block"
-            src="/oil/o2.png"
+            src="/oil/i2.jpg"
             alt=""
             width={1117}
             height={745}
@@ -76,20 +76,20 @@ export default function Page() {
           <span className="font-bold text-[12px] lg:text-[25px] mb-2 lg:mb-0 ">
             Упаковка для серії Flavour
           </span>
-          <span className="font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] text-left tracking-[0] lg:text-justify lg:mb-[70px] ">
+          <span className="font-normal lg:text-[25px] text-[12px] leading-[1.2] hyphens-auto  text-justify lg:mb-[70px] ">
             Преміальна упаковка CBD-олії, яка позиціонується як преміальний,
-            натуральний продукт для здоров’я та добробуту. Кожна з 11 одиниць
-            має індивідуально розроблений патерн відповідно до смаку продукту,
-            що розміщується на бокові частині коробки. На іншій боковій частині
-            розміщене попередження та спосіб застосування. Серія представлена на
-            українскій та польській мовах у 30/10 мл з 5 /10% вмісту діючої
-            речовини та вміщає 11 смаків.
+            натуральний продукт для здоров’я та добробуту.
+            <br /> Кожна з 11 одиниць має індивідуально розроблений патерн
+            відповідно до смаку продукту, що розміщується на бокові частині
+            коробки. На іншій боковій частині розміщене попередження та спосіб
+            застосування. Серія представлена на українскій та польській мовах у
+            30/10 мл з 5 /10% вмісту діючої речовини та вміщає 11 смаків.
           </span>
         </div>
       </div>
       <Image
         className="w-full  lg:block"
-        src="/oil/o3.png"
+        src="/oil/i3.jpg"
         alt=""
         width={1920}
         height={1080}
@@ -98,7 +98,7 @@ export default function Page() {
         <div className="lg:w-[1117px] lg:h-[745px] w-[312px] h-[208px]">
           <Image
             className="w-full hidden  lg:block"
-            src="/oil/o4.png"
+            src="/oil/i4.jpg"
             alt=""
             width={1117}
             height={745}
@@ -118,7 +118,7 @@ export default function Page() {
       </div>
       <Image
         className="w-full  lg:block"
-        src="/oil/o5.png"
+        src="/oil/i5.jpg"
         alt=""
         width={1920}
         height={1080}
@@ -140,7 +140,7 @@ export default function Page() {
         <div className="lg:w-[1117px] lg:h-[745px] w-[312px] h-[208px]">
           <Image
             className="w-full hidden lg:block "
-            src="/oil/o6.png"
+            src="/oil/i6.jpg"
             alt=""
             width={1920}
             height={1080}
@@ -160,11 +160,14 @@ export default function Page() {
       </div>
       <Image
         className="w-full  lg:block "
-        src="/oil/07.png"
+        src="/oil/i7.jpg"
         alt=""
         width={1920}
         height={1080}
       />
+      <p className="lg:text-[25px] text-[10px] my-[24px] lg:my-[80px] text-black text-center">
+        Олійка Sleep magic 10ml
+      </p>
     </div>
   );
 }

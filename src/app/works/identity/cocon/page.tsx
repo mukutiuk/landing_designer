@@ -7,15 +7,15 @@ export default function Page() {
         className="h-[830px] w-full mb-[113px] hidden lg:block"
         src="/cocon/cocon1.png"
         alt=""
-        width={1920} // приблизна ширина для оптимізації
-        height={830} // відповідна висота
+        width={1920}
+        height={830}
       />
 
       <Image
         className="h-[250px] w-full mb-[37px] block lg:hidden"
         src="/cocon/coS.png"
         alt=""
-        width={1080} // приблизна ширина
+        width={1080}
         height={250}
       />
 
@@ -56,8 +56,8 @@ export default function Page() {
             className="lg:h-[449px] lg:max-w-[1039px] max-w-[221px]"
             src="/cocon/cocon2.png"
             alt=""
-            width={1039} // приблизна ширина
-            height={449} // висота для lg
+            width={1039}
+            height={449}
           />
         </div>
 

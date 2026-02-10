@@ -4,8 +4,17 @@ export default function Page() {
   return (
     <div>
       <Image
-        className="lg:h-[830px] mt-[100px] w-full lg:mb-[135px] mb-[37px]"
-        src="/certificate/s1.png"
+        className="lg:h-[830px] mt-[100px] w-full lg:mb-[135px] mb-[37px] lg:hidden"
+        src="/certificate/i1.jpg"
+        alt="Головна ілюстрація LLAMA English"
+        width={1920}
+        height={830}
+        priority
+      />
+
+      <Image
+        className=" mt-[100px] w-full lg:mb-[135px] mb-[37px] hidden lg:block"
+        src="/certificate/p1.jpg"
         alt="Головна ілюстрація LLAMA English"
         width={1920}
         height={830}
@@ -48,23 +57,23 @@ export default function Page() {
 
       <Image
         className="w-full hidden lg:block"
-        src="/certificate/s2.png"
+        src="/certificate/p2.jpg"
         alt=""
         width={1920}
         height={1080}
       />
 
-      <div className="flex flex-col lg:flex-row">
+      <div className="  hidden lg:flex flex-col lg:flex-row">
         <Image
-          className="w-full "
-          src="/certificate/s3.png"
+          className=" lg:w-1/2 object-cover"
+          src="/certificate/p3.jpg"
           alt=""
           width={1920}
           height={1080}
         />{" "}
         <Image
-          className="w-full "
-          src="/certificate/s4.png"
+          className=" lg:w-1/2 object-cover "
+          src="/certificate/p4.jpg"
           alt=""
           width={1920}
           height={1080}
@@ -72,7 +81,21 @@ export default function Page() {
       </div>
       <Image
         className="w-full  lg:hidden"
-        src="/certificate/sS.png"
+        src="/certificate/p7.jpg"
+        alt=""
+        width={1920}
+        height={1080}
+      />
+      <Image
+        className="w-full  lg:hidden"
+        src="/certificate/p8.jpg"
+        alt=""
+        width={1920}
+        height={1080}
+      />
+      <Image
+        className="w-full  lg:hidden"
+        src="/certificate/p6.jpg"
         alt=""
         width={1920}
         height={1080}
@@ -80,7 +103,7 @@ export default function Page() {
 
       <Image
         className="w-full hidden lg:block"
-        src="/certificate/s5.png"
+        src="/certificate/p5.jpg"
         alt=""
         width={1920}
         height={1080}

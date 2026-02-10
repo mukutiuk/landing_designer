@@ -26,19 +26,17 @@ export default function Page() {
           />
         </div>
 
-        <div className="flex flex-wrap items-baseline gap-x-3">
-          <span className="font-montserrat font-semibold lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify">
-            LLAMA english -
-          </span>
-          <span className="font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify lg:mb-[169px] mb-[50px]">
-            це бренд, який робить вивчення англійської мови простим, дружнім і
-            зрозумілим. В основі бренду - ідея комфортного навчання без страху
-            помилок і зайвого тиску. Символ лами у логотипі передає характер
-            LLAMA english: спокій, доброзичливість і впевненість у поступовому
-            результаті. Тут англійська сприймається не як складний обов’язок, а
-            як природний процес і частина щоденного життя.
-          </span>
-        </div>
+        <p className="font-normal lg:text-[25px] text-[12px] leading-[1.2] hyphens-auto   text-justify">
+          <span className="font-montserrat font-semibold">
+            TLLAMA english -
+          </span>{" "}
+          це бренд, який робить вивчення англійської мови простим, дружнім і
+          зрозумілим. В основі бренду - ідея комфортного навчання без страху
+          помилок і зайвого тиску. Символ лами у логотипі передає характер LLAMA
+          english: спокій, доброзичливість і впевненість у поступовому
+          результаті. Тут англійська сприймається не як складний обов’язок, а як
+          природний процес і частина щоденного життя.
+        </p>
       </div>
 
       <Image
@@ -50,15 +48,12 @@ export default function Page() {
       />
 
       <div className="max-w-[1193px] m-auto lg:mb-[140px] mb-[50px] px-[27px]">
-        <span className="font-montserrat font-semibold lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify">
-          Ідея:
-        </span>
-        <span className="font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify">
-          {" "}
-          у верхній частині розміщене коло теплого жовто-золотого кольору з
-          білим силуетом лами в профіль. Лама асоціюється з доброзичливістю,
-          спокоєм і легкістю навчання.
-        </span>
+        <p className="font-normal lg:text-[25px] text-[12px] leading-[1.2] hyphens-auto   text-justify">
+          <span className="font-montserrat font-semibold">Ідея:</span> у верхній
+          частині розміщене коло теплого жовто-золотого кольору з білим силуетом
+          лами в профіль. Лама асоціюється з доброзичливістю, спокоєм і легкістю
+          навчання.
+        </p>
       </div>
 
       <Image
@@ -83,7 +78,7 @@ export default function Page() {
           src="/lamma/lam4.png"
           alt=""
           width={725}
-          height={500} // ≈ реальна пропорція — підкорегуй за потреби
+          height={500}
         />
       </div>
 
@@ -101,7 +96,7 @@ export default function Page() {
           src="/lamma/lam6.png"
           alt=""
           width={905}
-          height={600} // ≈ — підстав реальну
+          height={600}
         />
       </div>
 
@@ -119,7 +114,7 @@ export default function Page() {
           src="/lamma/lam8.png"
           alt=""
           width={1037}
-          height={650} // ≈ — підстав реальну
+          height={650}
         />
       </div>
 

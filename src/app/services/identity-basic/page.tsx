@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[121px] mt-[160px] mb-16">
+    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[221px] mt-[160px] mb-16">
       <div className="max-w-[1232px] lg:mx-auto min-h-[80vh] mx-[27px]  ">
         <div className="flex flex-col lg:flex-row lg:space-x-12">
           <div className="w-full lg:w-3/5">
-            <div className="flex justify-between items-end mb-12 pb-2">
+            <div className="flex justify-between items-end mb-10 pb-2">
               <div className="flex flex-col justify-end">
                 <h1
                   className="  lg:text-[65px] 
@@ -28,7 +28,7 @@ export default function Page() {
               />
               <Link
                 href="/works/identity"
-                className="text-[10px] kharkiv font-normal pb-1 border-b border-black-200 text-left   hover:text-black transition duration-200 lg:hidden max-w-[123px"
+                className="text-[10px] kharkiv font-normal pb-1 border-b border-black-200 text-right leading-[100%]  hover:text-black transition duration-200 lg:hidden max-w-[123px"
               >
                 Переглянути <br /> приклади робіт
               </Link>
