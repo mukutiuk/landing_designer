@@ -27,9 +27,7 @@ export default function Page() {
         </div>
 
         <p className="font-normal lg:text-[25px] text-[12px] leading-[1.2] hyphens-auto   text-justify">
-          <span className="font-montserrat font-semibold">
-            TLLAMA english -
-          </span>{" "}
+          <span className="font-montserrat font-semibold">LLAMA english -</span>{" "}
           це бренд, який робить вивчення англійської мови простим, дружнім і
           зрозумілим. В основі бренду - ідея комфортного навчання без страху
           помилок і зайвого тиску. Символ лами у логотипі передає характер LLAMA
@@ -58,7 +56,7 @@ export default function Page() {
 
       <Image
         className="w-full lg:my-0 my-[130px]"
-        src="/lamma/lam2.png"
+        src="/lamma/ll.svg"
         alt=""
         width={1920}
         height={1080}
@@ -66,7 +64,7 @@ export default function Page() {
 
       <Image
         className="w-full"
-        src="/lamma/lam3.png"
+        src="/lamma/l1.jpg"
         alt=""
         width={1920}
         height={1080}
@@ -75,7 +73,7 @@ export default function Page() {
       <div className="flex justify-center mt-[144px] mb-[80px]">
         <Image
           className="lg:w-full lg:max-w-[725px] w-[232px]"
-          src="/lamma/lam4.png"
+          src="/lamma/ll2.svg"
           alt=""
           width={725}
           height={500}
@@ -111,7 +109,7 @@ export default function Page() {
       <div className="flex justify-center mt-[161px] mb-[135px]">
         <Image
           className="lg:w-full max-w-[1037px] w-[285px]"
-          src="/lamma/lam8.png"
+          src="/lamma/l2.jpg"
           alt=""
           width={1037}
           height={650}

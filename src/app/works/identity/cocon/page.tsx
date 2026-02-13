@@ -54,7 +54,7 @@ export default function Page() {
           <span className="lg:text-[25px] text-[10px]">Фавікон</span>
           <Image
             className="lg:h-[449px] lg:max-w-[1039px] max-w-[221px]"
-            src="/cocon/cocon2.png"
+            src="/cocon/i2.jpg"
             alt=""
             width={1039}
             height={449}
@@ -91,7 +91,7 @@ export default function Page() {
 
         <Image
           className="hidden lg:block"
-          src="/cocon/cocon5.png"
+          src="/cocon/w.jpg"
           alt=""
           width={1920}
           height={600}
@@ -129,14 +129,14 @@ export default function Page() {
         />
         <Image
           className="w-[410px] mx-auto"
-          src="/cocon/co8.png"
+          src="/cocon/i3.jpg"
           alt=""
           width={410}
           height={250}
         />
         <Image
           className="w-full"
-          src="/cocon/co9.png"
+          src="/cocon/i.svg"
           alt=""
           width={1080}
           height={500}
@@ -150,7 +150,7 @@ export default function Page() {
         />
         <Image
           className="w-full"
-          src="/cocon/co11.png"
+          src="/cocon/i5.jpg"
           alt=""
           width={1080}
           height={500}
@@ -174,7 +174,7 @@ export default function Page() {
         />
         <Image
           className="w-full"
-          src="/cocon/cocon8.png"
+          src="/cocon/i1.jpg"
           alt=""
           width={1920}
           height={600}
@@ -195,7 +195,7 @@ export default function Page() {
         />
         <Image
           className="w-full"
-          src="/cocon/cocon11.png"
+          src="/cocon/i2.svg"
           alt=""
           width={1920}
           height={600}

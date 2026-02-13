@@ -21,7 +21,7 @@ export default function Page() {
         priority
       />
 
-      <div className="max-w-[1193px] m-auto lg:mb-[173px] mb-[43px] px-[22px]">
+      <div className="max-w-[1193px] m-auto lg:mb-[100px] mb-[43px] px-[22px]">
         <div className="flex gap-[35px] items-center">
           <h2 className="kharkiv inline-block px-6 py-2 mb-6 lg:text-[65px] text-[25px] font-normal">
             IPLANTBASIC
@@ -36,18 +36,14 @@ export default function Page() {
         </div>
 
         <div className="flex flex-wrap items-baseline gap-x-3">
-          <span className="font-montserrat font-semibold text-[25px] leading-[100%] tracking-[0] text-justify hidden lg:block">
-            IPLANTBASIC -
-          </span>
-
-          <span className="mt-[20px] lg:mb-[144px] mb-[8px] font-montserrat font-normal lg:text-[25px] text-[12px] leading-[1.25] text-justify hyphens-auto">
+          <span className="mt-[20px]  mb-[8px] font-montserrat font-normal lg:text-[25px] text-[12px] leading-[1.25] text-justify hyphens-auto">
             це інтернет-магазин у Об’єднаних Арабських Еміратах, який пропонує
             100% рослинні (plant-based) продукти харчування для веганів,
             вегетаріанців, флекситаріанців і всіх, хто хоче харчуватися
             здоровіше та стійкіше.
           </span>
 
-          <span className="mt-[20px] lg:mb-[144px] mb-[38px] font-montserrat font-normal lg:text-[25px] text-[12px] leading-[1.25] text-justify hyphens-auto">
+          <span className="mt-[20px]  mb-[38px] font-montserrat font-normal lg:text-[25px] text-[12px] leading-[1.25] text-justify hyphens-auto">
             iPlantBased - це про сучасне рослинне життя: чисті інгредієнти,
             продуманий вибір і стиль, який легко інтегрується у щоденний ритм
             великого міста.
@@ -66,7 +62,7 @@ export default function Page() {
       <div className="flex justify-center my-[150px]">
         <Image
           className="max-w-[791px] lg:block hidden"
-          src="/iplantbasic/ip1.png"
+          src="/iplantbasic/m.svg"
           alt=""
           width={791}
           height={500}
@@ -91,7 +87,7 @@ export default function Page() {
 
       <Image
         className="w-full hidden lg:block"
-        src="/iplantbasic/ip4.png"
+        src="/iplantbasic/p.svg"
         alt=""
         width={1920}
         height={1080}
@@ -107,7 +103,7 @@ export default function Page() {
 
       <Image
         className="w-full"
-        src="/iplantbasic/ip5.png"
+        src="/iplantbasic/p4.jpg"
         alt=""
         width={1920}
         height={1080}
@@ -116,7 +112,7 @@ export default function Page() {
       <div className="flex justify-center">
         <Image
           className="max-w-[575px] mb-[258px] mt-[230px] hidden lg:block"
-          src="/iplantbasic/ip6.png"
+          src="/iplantbasic/p1.svg"
           alt=""
           width={575}
           height={400}
@@ -132,7 +128,7 @@ export default function Page() {
 
       <Image
         className="w-full  hidden lg:block"
-        src="/iplantbasic/ip7.png"
+        src="/iplantbasic/15.png"
         alt=""
         width={1920}
         height={1080}
@@ -148,11 +144,11 @@ export default function Page() {
 
       <div className="flex justify-center">
         <Image
-          className="max-w-[909px] mb-[217px] mt-[218px] hidden lg:block"
-          src="/iplantbasic/ip8.png"
+          className=" hidden lg:block"
+          src="/iplantbasic/16.png"
           alt=""
-          width={909}
-          height={600}
+          width={1920}
+          height={720}
         />
 
         <Image
@@ -166,7 +162,7 @@ export default function Page() {
 
       <Image
         className="w-full hidden lg:block"
-        src="/iplantbasic/ip9.png"
+        src="/iplantbasic/p3.jpg"
         alt=""
         width={1920}
         height={1080}
