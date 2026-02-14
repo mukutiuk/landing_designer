@@ -4,11 +4,20 @@ export default function Page() {
   return (
     <div>
       <Image
-        className="lg:h-[830px] mt-[100px] lg:mt-0 w-full lg:mb-[135px] mb-[37px]"
-        src="/honey/p1.jpg"
+        className="lg:h-[830px] mt-[100px] lg:mt-0 w-full lg:mb-[135px] mb-[37px] lg:block hidden"
+        src="/honey/ss.jpg"
         alt="Головна ілюстрація LLAMA English"
-        width={2920}
+        width={1920}
         height={830}
+        priority
+      />
+
+      <Image
+        className="lg:h-[830px] mt-[100px] lg:mt-0 w-full lg:mb-[135px] mb-[37px] lg:hidden"
+        src="/honey/sq.jpg"
+        alt="Головна ілюстрація LLAMA English"
+        width={402}
+        height={250}
         priority
       />
 
@@ -39,19 +48,19 @@ export default function Page() {
       </div>
 
       <Image
-        className="w-full "
-        src="/honey/p2.jpg"
+        className="w-full lg:block hidden"
+        src="/honey/hx.jpg"
         alt=""
-        width={1920}
-        height={1080}
+        width={1440}
+        height={2320}
         priority
       />
       <Image
-        className="w-full "
-        src="/honey/p3.jpg"
+        className="w-full lg:hidden"
+        src="/honey/s.jpg"
         alt=""
-        width={1920}
-        height={1080}
+        width={400}
+        height={827}
       />
     </div>
   );
