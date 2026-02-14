@@ -15,13 +15,13 @@ const logos = [
   },
   {
     href: "/works/logo/boungainvillea",
-    image: "/m1.png",
+    image: "/15.jpg",
     title: "ЛОГОТИП",
     subtitle: "Boungainvillea",
   },
   {
     href: "/works/logo/lamma",
-    image: "/L.png",
+    image: "/14.jpg",
     title: "ЛОГОТИП",
     subtitle: "Lamma english",
   },
@@ -44,7 +44,7 @@ export default function Page() {
   const [scrollLeft, setScrollLeft] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const SLIDE_WIDTH = 402;
+  const SLIDE_WIDTH = 380;
   const GAP = 20;
   const FULL_SLIDE_WIDTH = SLIDE_WIDTH + GAP;
 

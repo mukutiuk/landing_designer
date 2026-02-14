@@ -5,7 +5,7 @@ export default function Page() {
     <div className="mt-[100px]">
       <Image
         className="h-[830px] w-full mb-[113px] hidden lg:block"
-        src="/cocon/cocon1.png"
+        src="/cocon/p1.jpg"
         alt=""
         width={1920}
         height={830}
@@ -13,7 +13,7 @@ export default function Page() {
 
       <Image
         className="h-[250px] w-full mb-[37px] block lg:hidden"
-        src="/cocon/coS.png"
+        src="/cocon/p2.jpg"
         alt=""
         width={1080}
         height={250}
@@ -98,7 +98,7 @@ export default function Page() {
         />
         <Image
           className="block lg:hidden mx-auto mt-[77px]"
-          src="/cocon/co5.png"
+          src="/cocon/p3.jpg"
           alt=""
           width={1080}
           height={400}
@@ -108,26 +108,76 @@ export default function Page() {
       <div className="lg:hidden">
         <Image
           className="w-full"
-          src="/cocon/co4.png"
+          src="/cocon/p4.jpg"
+          alt=""
+          width={1080}
+          height={500}
+        />
+        <Image
+          className="w-full"
+          src="/cocon/p5.jpg"
           alt=""
           width={1080}
           height={500}
         />
         <Image
           className="w-[316px] mx-auto"
-          src="/cocon/co6.png"
+          src="/cocon/p6.jpg"
           alt=""
           width={316}
           height={200}
         />
         <Image
           className="w-full"
-          src="/cocon/co7.png"
+          src="/cocon/p7.jpg"
           alt=""
           width={1080}
           height={500}
         />
+
         <Image
+          className="w-full"
+          src="/cocon/m.jpg"
+          alt=""
+          width={1080}
+          height={500}
+        />
+        <div className="lg:hidden px-[29px] mt-[12px] mb-[50px]">
+          <p className="lg:mb-[15px] mb-3 font-montserrat font-semibold lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify  ">
+            Брендований пакет та візитка
+          </p>
+
+          <p className=" font-montserrat font-normal lg:text-[25px] text-[12px] leading-[100%] tracking-[0] text-justify  lg:hidden">
+            Дизайн паперового пакету з чи без використання тиснення золотою
+            фольгою. Пакет має 3 індивідуальні розміри. Двостороння візитка має
+            тиснення золотою фольгою о обидвох сторін..
+          </p>
+        </div>
+
+        <Image
+          className="w-full"
+          src="/cocon/m1.jpg"
+          alt=""
+          width={1080}
+          height={500}
+        />
+
+        <Image
+          className="w-full"
+          src="/cocon/m2.jpg"
+          alt=""
+          width={1080}
+          height={500}
+        />
+
+        <Image
+          className="w-full"
+          src="/cocon/m3.svg"
+          alt=""
+          width={1080}
+          height={500}
+        />
+        {/* <Image
           className="w-[410px] mx-auto"
           src="/cocon/i3.jpg"
           alt=""
@@ -154,7 +204,7 @@ export default function Page() {
           alt=""
           width={1080}
           height={500}
-        />
+        /> */}
       </div>
 
       <div className="hidden lg:block">
