@@ -9,7 +9,7 @@ import { useRef, useState } from "react";
 const logos = [
   {
     href: "/works/logo/hemp-active",
-    image: "/m2.png",
+    image: "/13.jpg",
     title: "ЛОГОТИП",
     subtitle: "HempActive",
   },
@@ -27,7 +27,7 @@ const logos = [
   },
   {
     href: "/works/logo/iplantbasic",
-    image: "/r1.png",
+    image: "/12.jpg",
     title: "ЛОГОТИП",
     subtitle: "Iplantbasic",
   },
