@@ -24,7 +24,7 @@ export default function Home() {
           />
 
           <Image
-            src="/smP.png"
+            src="/sm1.jpg"
             alt=""
             width={768}
             height={300}
