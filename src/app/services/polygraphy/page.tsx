@@ -68,7 +68,7 @@ word-spacing"
                 <p className="font-bold lg:text-[20px] text-[15px] lg:flex lg:flex-col block max-w-[220px] leading-[15px] lg:leading-[100%] lg:max-w-full">
                   Паковання{" "}
                   <span className="lg:text-[20px] text-[10px] font-normal leading-[12px] lg:leading-[25px] ">
-                    (кінцева ціна залежить від складності макету/констуктиву
+                    (кінцева ціна залежить від складності макету/конструктиву
                     паковання)
                   </span>
                 </p>
