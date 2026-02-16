@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[221px] mt-[100px]">
+    <div className="h-[calc(100vh-60px - 21px)]  lg:mt-[321px] mt-[100px]">
       <div className="max-w-[1232px] lg:mx-auto min-h-[80vh] mx-[27px] ">
         <div className="flex flex-col lg:space-x-12">
           <div className="w-full ">
@@ -13,7 +13,7 @@ export default function Page() {
               >
                 ЕТАПИ РОБОТИ
               </h1>
-              <div className="relative lg:h-[46px] lg:w-[46px] h-[24px] w-[24px]">
+              <div className="relative lg:h-[46px] lg:w-[46px] h-[20px] w-[20px]">
                 <Image
                   src="/Group16.svg"
                   alt=""
@@ -31,7 +31,8 @@ export default function Page() {
                   Знайомство з проектом
                 </p>
                 <p className="text-[15px] lg:text-[20px]  font-normal max-w-[305px]">
-                  Затвердження тз; Затвердження дедлайнів; <br />
+                  Затвердження тз;
+                  <br /> Затвердження дедлайнів; <br />
                   Внесення передплати 50%.
                 </p>
               </div>

@@ -9,19 +9,20 @@ export default function Page() {
           {/* Десктопна версія ілюстрації */}
           <Image
             className="lg:w-[492px] lg:h-[289px] lg:block hidden"
-            src="/workImg.svg"
+            src="/qw.jpg"
             alt="Ілюстрація робіт"
             width={492}
             height={289}
+            quality={100}
             priority
           />
 
-          {/* Мобільна версія ілюстрації */}
           <Image
             className="w-full block lg:hidden"
             src="/wS.jpg"
             alt="Ілюстрація робіт (мобільна)"
             width={800}
+            quality={100}
             height={400}
           />
 

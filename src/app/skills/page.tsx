@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <section className="w-full bg-white  lg:max-w-[1232px] lg:mx-auto mt-24 lg:mt-[124px] py-12">
+    <section className="w-full bg-white  lg:max-w-[1232px] lg:mx-auto mt-24 lg:mt-[224px] py-12">
       {/* Text section */}
       <div className="flex-1  w-full  ">
         <div className="flex lg:gap-[35px] gap-[68px] items-center mb-[26px] justify-center lg:justify-start">

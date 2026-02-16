@@ -109,15 +109,22 @@ export default function Page() {
           </div>
         </div>
         <div className="text-right  mt-[98px] hidden lg:block">
+          <p className="text-[15px] block lg:mb-6 font-normal kharkiv">
+            ТЕРМІН РОЗРОБКИ: 5-7 РОБОЧИХ ДНІВ
+          </p>
           <h2 className="text-[24px] font-normal  text-black/50 kharkiv">
             ЦІНА: 7 000 ГРН
           </h2>
         </div>
 
-        <div className="  mt-[58px] lg:hidden">
+        <div className="mt-[58px] lg:hidden">
           <h2 className="text-[15px] font-normal   kharkiv">
-            ТЕРМІН РОЗРОБКИ: 5-7 РОБОЧИХ ДНІВ. ЦІНА: 7 000 ГРН
+            ТЕРМІН РОЗРОБКИ: 5-7 РОБОЧИХ ДНІВ
           </h2>
+
+          <p className="text-[15px] block mt-1 font-normal kharkiv">
+            ЦІНА: 7 000 ГРН
+          </p>
         </div>
       </div>
     </div>

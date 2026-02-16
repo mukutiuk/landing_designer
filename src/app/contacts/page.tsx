@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <main className="min-h-[calc(100vh)] bg-[#000] p-6 ">
+    <main className="min-h-[calc(100vh)] bg-[#000] p-6 lg:pt-[100px]">
       <div className="text-white bg-black max-w-[1232px] mx-auto ">
-        <div className="mb-10 mt-[132px]">
+        <div className="mb-10 mt-[132px] ">
           <div className="flex  items-end w-full lg:gap-[76px] justify-between lg:justify-start">
             <h1 className="text-[25px] lg:text-[65px] leading-[1.1] font-normal uppercase kharkiv">
               Контакти <br />{" "}
@@ -79,7 +79,7 @@ export default function Page() {
         {/* Більше робіт */}
         <div className="lg:mt-16 mt-[96px]">
           <div className="flex  items-end w-full lg:gap-[76px] justify-between lg:justify-start">
-            <h2 className="lg:text-[45px] text-[15px]  leading-[1.1] font-normal uppercase">
+            <h2 className="lg:text-[45px] text-[15px]  leading-[1.1] font-normal kharkiv uppercase">
               Більше моїх робіт тут:
             </h2>
             <Image
@@ -114,7 +114,7 @@ export default function Page() {
                 href="https://www.instagram.com/balachuk_dsgn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline w-[338px] block text-right"
+                className="hover:underline w-[338px] block text-right lg:text-left"
               >
                 @balachuk_dsgn
               </a>

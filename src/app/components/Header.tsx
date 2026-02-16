@@ -41,7 +41,7 @@ export default function HeaderMUI() {
   const servicesMenu = [
     { title: "LOGO", href: "/services/logo" },
     { title: "IDENTITY BASIC", href: "/services/identity-basic" },
-    { title: "IDENTITY PREMIUM", href: "/services/identity-premium" },
+    { title: "IDENTITY FULL", href: "/services/identity-premium" },
     { title: "ПОЛІГРАФІЯ", href: "/services/polygraphy" },
   ];
 

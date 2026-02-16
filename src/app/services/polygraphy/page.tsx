@@ -89,6 +89,18 @@ word-spacing"
                   300 грн/1 макет
                 </p>
               </li>
+              <li className="py-2  border-b border-black-200 items-center flex justify-between">
+                <p className="font-bold lg:text-[20px] text-[15px] block lg:flex-col max-w-[220px] leading-[15px] lg:leading-[100%] lg:max-w-[700px]">
+                  Підготовка до друку{" "}
+                  <span className="lg:text-[20px] block lg:inline text-[10px] font-normal leading-[12px] lg:leading-[25px] ">
+                    (ціна залежить від складності макету, підготовка
+                    здійснюється згідно вимог вашої друкарні)
+                  </span>
+                </p>
+                <p className=" kharkiv text-black/50 lg:text-[24px] text-[12px] max-w-[97px]  lg:max-w-[397px] text-right">
+                  від 100 грн
+                </p>
+              </li>
             </ul>
           </div>
 
