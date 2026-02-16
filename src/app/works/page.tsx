@@ -19,10 +19,10 @@ export default function Page() {
           {/* Мобільна версія ілюстрації */}
           <Image
             className="w-full block lg:hidden"
-            src="/woS.png"
+            src="/wS.jpg"
             alt="Ілюстрація робіт (мобільна)"
             width={800}
-            height={400} // приблизно — краще замінити на реальні пропорції
+            height={400}
           />
 
           <div className="flex flex-col w-full px-[56px]">
