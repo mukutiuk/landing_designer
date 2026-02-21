@@ -15,7 +15,7 @@ const identityItems = [
   },
   {
     href: "/works/identity/immortal",
-    image: "/logo-3.svg",
+    image: "/rt.jpg",
     title: "АЙДЕНТИКА",
     description: "Immortal english school",
   },
