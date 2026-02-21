@@ -59,7 +59,7 @@ export default function Page() {
         height={1080}
       />
 
-      <div className="flex justify-center my-[150px]">
+      <div className="flex justify-center lg:my-[150px] my-[77px]">
         <Image
           className="max-w-[791px] lg:block hidden"
           src="/iplantbasic/m.svg"
@@ -78,7 +78,7 @@ export default function Page() {
       </div>
 
       <Image
-        className="w-full"
+        className="w-full lg:block hidden"
         src="/iplantbasic/ip3.png"
         alt=""
         width={1920}
@@ -86,16 +86,16 @@ export default function Page() {
       />
 
       <Image
-        className="w-full hidden lg:block"
-        src="/iplantbasic/p.svg"
+        className="w-full lg:hidden"
+        src="/iplantbasic/im.jpg"
         alt=""
-        width={1920}
-        height={1080}
+        width={402}
+        height={252}
       />
 
       <Image
-        className="w-full  lg:hidden"
-        src="/iplantbasic/i3.jpg"
+        className="w-full hidden lg:block"
+        src="/iplantbasic/p.svg"
         alt=""
         width={1920}
         height={1080}
@@ -127,6 +127,22 @@ export default function Page() {
       </div>
 
       <Image
+        className="w-full  lg:hidden"
+        src="/iplantbasic/im2.jpg"
+        alt=""
+        width={1920}
+        height={1080}
+      />
+
+      <Image
+        className="w-full  lg:hidden"
+        src="/iplantbasic/i3.jpg"
+        alt=""
+        width={1920}
+        height={1080}
+      />
+
+      <Image
         className="w-full  hidden lg:block"
         src="/iplantbasic/15.png"
         alt=""
@@ -136,7 +152,7 @@ export default function Page() {
 
       <Image
         className="w-full lg:hidden"
-        src="/iplantbasic/i5.jpg"
+        src="/iplantbasic/im3.jpg"
         alt=""
         width={403}
         height={422}
@@ -151,13 +167,13 @@ export default function Page() {
           height={720}
         />
 
-        <Image
+        {/* <Image
           className="max-w-[263px] mb-[117px] mt-[118px] lg:hidden"
           src="/iplantbasic/i6.jpg"
           alt=""
           width={263}
           height={133}
-        />
+        /> */}
       </div>
 
       <Image
@@ -167,16 +183,16 @@ export default function Page() {
         width={1920}
         height={1080}
       />
-      <Image
+      {/* <Image
         className="w-full  lg:hidden"
         src="/iplantbasic/i7.jpg"
         alt=""
         width={1920}
         height={1080}
-      />
+      /> */}
       <Image
-        className="w-full  lg:hidden"
-        src="/iplantbasic/i8.jpg"
+        className="w-full  lg:hidden mb-[200px]"
+        src="/iplantbasic/im4.jpg"
         alt=""
         width={1920}
         height={1080}
