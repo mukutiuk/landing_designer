@@ -170,13 +170,13 @@ export default function Page() {
 
               <div className="flex justify-between items-end">
                 <h4 className="text-[18px] font-bold">{item.title}</h4>
-                <Image
+                {/* <Image
                   src="/Group16.svg"
                   alt=""
                   width={15}
                   height={15}
                   className="rotate-[-90deg]"
-                />
+                /> */}
               </div>
 
               <p className="text-[18px]">{item.description}</p>
