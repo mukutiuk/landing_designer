@@ -44,7 +44,7 @@ export default function Page() {
   const [scrollLeft, setScrollLeft] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const SLIDE_WIDTH = 380;
+  const SLIDE_WIDTH = 400;
   const GAP = 20;
   const FULL_SLIDE_WIDTH = SLIDE_WIDTH + GAP;
 

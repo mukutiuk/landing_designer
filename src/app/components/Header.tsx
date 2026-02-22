@@ -15,6 +15,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Image from "next/image";
 
 export default function HeaderMUI() {
   const pathname = usePathname();
@@ -152,18 +153,31 @@ export default function HeaderMUI() {
 
   const MobileMenu = () => (
     <Drawer
-      anchor="top"
+      anchor="right"
       open={mobileMenuOpen}
       onClose={() => setMobileMenuOpen(false)}
       PaperProps={{
         sx: {
-          width: "100vw",
+          width: "50vw",
           height: "100vh",
           backgroundColor: isDarkHeader ? "#000" : "#fff",
           color: isDarkHeader ? "#fff" : "#000",
           display: "flex",
           flexDirection: "column",
+          justifyItems: "center",
           alignItems: "flex-end",
+          transition: "transform 0.4s ease",
+        },
+      }}
+      transitionDuration={{
+        enter: 450,
+        exit: 350,
+      }}
+      BackdropProps={{
+        sx: {
+          backgroundColor: "rgba(0,0,0,0.3)",
+          backdropFilter: "blur(4px)",
+          transition: "all 0.4s ease",
         },
       }}
     >
@@ -238,6 +252,35 @@ export default function HeaderMUI() {
           </Box>
         </Link>
       </Box>
+      <div className="flex gap-2 mb-[50px] mr-[32px]">
+        <a target="_blank" href="https://www.instagram.com/balachuk_dsgn">
+          <Image
+            width={8}
+            height={28}
+            src="/ins.svg"
+            className="h-[28px] w-[28px] "
+            alt=""
+          />
+        </a>
+        <a target="_blank" href="https://t.me/Alina_Balachuk">
+          <Image
+            width={18}
+            height={18}
+            src="/t.svg"
+            className="h-[28px] w-[28px]"
+            alt=""
+          />
+        </a>
+        <a target="_blank" href="mailto:alinabalachuk@gmail.com">
+          <Image
+            width={18}
+            height={18}
+            src="/em.svg"
+            className="h-[28px] w-[28px] "
+            alt=""
+          />
+        </a>
+      </div>
     </Drawer>
   );
 

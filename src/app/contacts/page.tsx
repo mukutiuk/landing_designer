@@ -56,6 +56,7 @@ export default function Page() {
               <p className="flex items-center lg:gap-[45px] justify-between lg:justify-start lg:text-[25px] text-[15px]">
                 <span className="font-bold w-[100px] block">Email:</span>
                 <a
+                  target="_blank"
                   href="mailto:alinabalachuk@gmail.com"
                   className="hover:underline lg:w-[338px] block"
                 >
@@ -66,6 +67,7 @@ export default function Page() {
               <p className="hidden lg:flex items-center gap-[45px] lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
                 <span className="font-bold w-[100px] block">Phone:</span>
                 <a
+                  target="_blank"
                   href="tel:+380968219645"
                   className="hover:underline w-[338px] block"
                 >
@@ -98,8 +100,8 @@ export default function Page() {
             <p className="flex items-center gap-[45px] lg:text-[25px] text-[15px] lg:gap-[45px] justify-between lg:justify-start">
               <span className="font-bold block w-[139px]">Behance:</span>
               <a
-                href="https://www.behance.net/Alina_Balachuk"
                 target="_blank"
+                href="https://www.behance.net/Alina_Balachuk"
                 rel="noopener noreferrer"
                 className="hover:underline "
               >

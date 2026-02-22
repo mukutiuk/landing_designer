@@ -44,53 +44,25 @@ export default function Page() {
   const packagingItems = [
     {
       href: "/works/packaging/honey",
-      image: "/z1.jpg",
+      image: "/c.jpg",
       title: "Етикетка",
       description: "для соняшникового меду",
     },
     {
       href: "/works/packaging/ointment",
-      image: "/z2.jpg",
+      image: "/c1.jpg",
       title: "ЕТИКЕТКА+КОРОБКА",
       description: "для регенеруючої мазі",
     },
     {
       href: "/works/packaging/oil",
-      image: "/z3.jpg",
+      image: "/c3.jpg",
       title: "ЕТИКЕТКА+КОРОБКА",
       description: "серія упаковаль для олій",
     },
     {
       href: "/works/packaging/cocon",
-      image: "/z4.jpg",
-      title: "АЙДЕНТИКА",
-      description: "Cocon luxe",
-    },
-  ];
-
-  const packagingItemsSmol = [
-    {
-      href: "/works/packaging/honey",
-      image: "/z1.jpg",
-      title: "Етикетка",
-      description: "для соняшникового меду",
-    },
-    {
-      href: "/works/packaging/ointment",
-
-      image: "/z2.jpg",
-      title: "ЕТИКЕТКА+КОРОБКА",
-      description: "для регенеруючої мазі",
-    },
-    {
-      href: "/works/packaging/oil",
-      image: "/z3.jpg",
-      title: "ЕТИКЕТКА+КОРОБКА",
-      description: "серія упаковаль для олій",
-    },
-    {
-      href: "/works/packaging/cocon",
-      image: "/z4.jpg",
+      image: "/c2.jpg",
       title: "АЙДЕНТИКА",
       description: "Cocon luxe",
     },
@@ -116,7 +88,7 @@ export default function Page() {
             marginLeft: "5px",
           }}
         >
-          {packagingItemsSmol.map((item, index) => (
+          {packagingItems.map((item, index) => (
             <Box
               key={index}
               sx={{
@@ -155,7 +127,7 @@ export default function Page() {
 
         {/* ===== DOTS INDICATOR ===== */}
         <div className="flex justify-center gap-2 mt-4 lg:hidden">
-          {packagingItemsSmol.map((_, index) => (
+          {packagingItems.map((_, index) => (
             <span
               key={index}
               className={`h-2 rounded-full transition-all duration-300 ${
