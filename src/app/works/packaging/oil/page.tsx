@@ -61,7 +61,7 @@ export default function Page() {
 
           <Image
             className="w-full  lg:hidden"
-            src="/oil/oS.png"
+            src="/oil/o1.jpg"
             alt=""
             width={312}
             height={208}
@@ -106,7 +106,7 @@ export default function Page() {
 
           <Image
             className="w-full   lg:hidden"
-            src="/oil/o4.png"
+            src="/oil/o2.jpg"
             alt=""
             width={312}
             height={208}
@@ -148,7 +148,7 @@ export default function Page() {
 
           <Image
             className="w-full  lg:hidden"
-            src="/oil/o6.png"
+            src="/oil/o3.jpg"
             alt=""
             width={312}
             height={208}

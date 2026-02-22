@@ -98,7 +98,7 @@ export default function Page() {
         </div>
         <div className="  mt-[58px] lg:hidden">
           <h2 className="text-[14px] font-normal   kharkiv">
-            ТЕРМІН РОЗРОБКИ: 10-14 РОБОЧИХ ДНІВ.
+            ТЕРМІН РОЗРОБКИ: 14-21 РОБОЧИХ ДНІВ.
           </h2>
           <p className="text-[15px] block mt-2 font-normal kharkiv">
             ЦІНА: 18 000 ГРН

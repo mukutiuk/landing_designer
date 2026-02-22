@@ -22,7 +22,7 @@ word-spacing"
                 alt=""
               />
               <a
-                href="#"
+                href="/works/packaging"
                 className="text-[10px] kharkiv  font-normal pb-1 border-b border-black-200 text-right leading-[100%]  hover:text-black transition duration-200 lg:hidden max-w-[123px]"
               >
                 Переглянути <br /> приклади робіт
