@@ -50,7 +50,7 @@ export default function Page() {
         </div>
       </div>
       <div className=" flex justify-center items-center flex-col lg:gap-[50px] gap-4 lg:mb-[160px] mb-[100px]">
-        <div className="lg:w-[1117px] lg:h-[745px] w-[312px] h-[208px]">
+        <div className="lg:w-[1117px] lg:h-[745px] w-[312px] h-[208px]  aspect-[312/208]">
           <Image
             className="w-full hidden  lg:block"
             src="/oil/i2.jpg"
@@ -61,10 +61,12 @@ export default function Page() {
 
           <Image
             className="w-full  lg:hidden"
-            src="/oil/o1.jpg"
+            src="/oil/r3.jpg"
             alt=""
             width={312}
             height={208}
+            quality={100}
+            unoptimized
           />
         </div>
         <p className="lg:text-[25px] text-[10px] text-black">
@@ -102,14 +104,16 @@ export default function Page() {
             alt=""
             width={1117}
             height={745}
+            unoptimized
           />
 
           <Image
             className="w-full   lg:hidden"
-            src="/oil/o2.jpg"
+            src="/oil/r2.jpg"
             alt=""
             width={312}
             height={208}
+            unoptimized
           />
         </div>
         <p className="lg:text-[25px] text-[10px] text-black">
@@ -122,6 +126,7 @@ export default function Page() {
         alt=""
         width={1920}
         height={1080}
+        unoptimized
       />{" "}
       <div className="max-w-[1193px] m-auto  mb-[31px] px-[27px] mt-[62px]">
         <div className="flex flex-wrap items-baseline lg:gap-x-2">
@@ -144,14 +149,16 @@ export default function Page() {
             alt=""
             width={1920}
             height={1080}
+            unoptimized
           />
 
           <Image
             className="w-full  lg:hidden"
-            src="/oil/o3.jpg"
+            src="/oil/r.jpg"
             alt=""
             width={312}
             height={208}
+            unoptimized
           />
         </div>
         <p className="lg:text-[25px] text-[10px] text-black">
@@ -164,6 +171,7 @@ export default function Page() {
         alt=""
         width={1920}
         height={1080}
+        unoptimized
       />
       <p className="lg:text-[25px] text-[10px] my-[24px] lg:my-[80px] text-black text-center">
         Олійка Sleep magic 10ml
