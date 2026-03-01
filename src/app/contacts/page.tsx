@@ -6,7 +6,7 @@ export default function Page() {
       <div className="text-white bg-black max-w-[1232px] mx-auto ">
         <div className="mb-10 mt-[132px] ">
           <div className="flex  items-end w-full lg:gap-[76px] justify-between lg:justify-start">
-            <h1 className="text-[25px] lg:text-[65px] leading-[1.1] font-normal uppercase kharkiv">
+            <h1 className="text-[20px] lg:text-[45px] leading-[1.1] font-normal uppercase kharkiv">
               Контакти <br />{" "}
               <span className="hidden lg:inline">для зв’язку</span>
             </h1>
@@ -15,7 +15,7 @@ export default function Page() {
               alt=""
               width={46}
               height={46}
-              className="lg:h-[46px] lg:w-[46px] h-[24px] w-[24px]"
+              className="lg:h-[35px] lg:w-[35px] h-[24px] w-[24px] lg:mb-2"
             />
           </div>
 

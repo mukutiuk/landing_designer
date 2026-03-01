@@ -18,6 +18,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Contact Form Email Setup
+
+The contact form sends submissions directly via EmailJS from the client.
+
+1. Create a `.env.local` file from `.env.example`.
+2. Set `NEXT_PUBLIC_EMAILJS_SERVICE_ID`.
+3. Set `NEXT_PUBLIC_EMAILJS_TEMPLATE_ID`.
+4. Set `NEXT_PUBLIC_EMAILJS_PUBLIC_KEY`.
+5. In your EmailJS template, include params: `name`, `phone`, `email`, `service`, `contactMethod`, `message`.
+6. Configure the receiver email in EmailJS as `alinabalachuk@gmail.com`.
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
