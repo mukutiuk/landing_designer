@@ -339,8 +339,8 @@ export default function Home() {
                     fontFamily: "Montserrat",
                     fontWeight: 400,
                     fontSize: {
-                      xs: "12px",
-                      sm: "20px",
+                      xs: "10px",
+                      sm: "15px",
                     },
                     lineHeight: "100%",
                     letterSpacing: "0.04em",
@@ -354,8 +354,8 @@ export default function Home() {
                           fontFamily: "Montserrat",
                           fontWeight: 400,
                           fontSize: {
-                            xs: "12px",
-                            sm: "20px",
+                            xs: "10px",
+                            sm: "15px",
                           },
                           lineHeight: "100%",
                           letterSpacing: "0.04em",
@@ -405,8 +405,8 @@ export default function Home() {
                     fontFamily: "Montserrat",
                     fontWeight: 400,
                     fontSize: {
-                      xs: "12px",
-                      sm: "20px",
+                      xs: "10px",
+                      sm: "15px",
                     },
                     lineHeight: "100%",
                     letterSpacing: "0.04em",
@@ -420,8 +420,8 @@ export default function Home() {
                           fontFamily: "Montserrat",
                           fontWeight: 400,
                           fontSize: {
-                            xs: "12px",
-                            sm: "20px",
+                            xs: "10px",
+                            sm: "15px",
                           },
                           lineHeight: "100%",
                           letterSpacing: "0.04em",
