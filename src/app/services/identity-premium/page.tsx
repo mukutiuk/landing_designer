@@ -93,7 +93,7 @@ export default function Page() {
             ТЕРМІН РОЗРОБКИ: 14-21 РОБОЧИХ ДНІВ.
           </p>
           <h2 className="text-[24px] font-normal  text-black/50 kharkiv">
-            ЦІНА: 18 000 грн
+            ЦІНА: 22 000 грн
           </h2>
         </div>
         <div className="  mt-[58px] lg:hidden">
@@ -101,7 +101,7 @@ export default function Page() {
             ТЕРМІН РОЗРОБКИ: 14-21 РОБОЧИХ ДНІВ.
           </h2>
           <p className="text-[15px] block mt-2 font-normal kharkiv">
-            ЦІНА: 18 000 ГРН
+            ЦІНА: 22 000 ГРН
           </p>
         </div>
       </div>
