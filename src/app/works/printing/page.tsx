@@ -1,7 +1,7 @@
 "use client";
 
 import type React from "react";
-import Image from "next/image";
+import Image from "@/app/components/OptimizedImage";
 import Link from "next/link";
 import { Box } from "@mui/material";
 import { useRef, useState } from "react";

@@ -7,7 +7,7 @@ import {
   Select,
   TextField,
 } from "@mui/material";
-import Image from "next/image";
+import Image from "@/app/components/OptimizedImage";
 import { type FormEvent, useState } from "react";
 
 export default function Home() {

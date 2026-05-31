@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/app/components/OptimizedImage";
 
 export default function Page() {
   return (
@@ -34,7 +34,7 @@ export default function Page() {
 
         {/* Розробка логотипу */}
         <p className="mt-[20px] lg:mb-[144px] mb-[38px] font-montserrat font-normal lg:text-[25px] text-[12px] leading-[1.25] text-justify hyphens-auto">
-          Розроблено редизайн логотипу. Акцент зроблено на слові "MEDLINE"
+          Розроблено редизайн логотипу. Акцент зроблено на слові «MEDLINE»
           завдяки великому розміру та контрасту з нижнім рядком. Добре
           читається, підкреслює як студійну, так і освітню функцію бізнесу,
           гарно масштабується.

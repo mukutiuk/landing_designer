@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/app/components/OptimizedImage";
 
 export default function Page() {
   return (
@@ -78,7 +78,7 @@ export default function Page() {
         />
       </div>
       <Image
-        src="/immoral_3.jpg"
+        src="/Immoral_3.jpg"
         alt=""
         width={390}
         height={800}
@@ -93,42 +93,42 @@ export default function Page() {
           className="w-full"
         />
         <Image
-          src="/immoral_4.jpg"
+          src="/Immoral_4.jpg"
           alt=""
           width={390}
           height={800}
           className="w-full"
         />
         <Image
-          src="/immoral_5.jpg"
+          src="/Immoral_5.jpg"
           alt=""
           width={390}
           height={800}
           className="w-full"
         />
         <Image
-          src="/immoral_6.jpg"
+          src="/Immoral_6.jpg"
           alt=""
           width={390}
           height={800}
           className="w-full"
         />
         <Image
-          src="/immoral_10.jpg"
+          src="/Immoral_10.jpg"
           alt=""
           width={390}
           height={800}
           className="w-full"
         />
         <Image
-          src="/immoral_7.jpg"
+          src="/Immoral_7.jpg"
           alt=""
           width={390}
           height={800}
           className="w-full"
         />
         <Image
-          src="/immoral_9.jpg"
+          src="/Immoral_9.jpg"
           alt=""
           width={390}
           height={800}

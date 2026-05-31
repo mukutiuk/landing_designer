@@ -12,21 +12,22 @@ import {
 } from "@mui/material";
 import KeyboardArrowLeft from "@mui/icons-material/KeyboardArrowLeft"; // <--- Додали іконку "назад"
 import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight"; // <--- Додали іконку "вперед"
+import Image from "@/app/components/OptimizedImage";
 
 const testimonials = [
   {
     text: `Раджу всі і кожному!!! Створення логотипу завдання не просте...`,
-    img: "/IMG_0922.JPG",
+    img: "/sm1.jpg",
     author: "Олена, власниця бренду",
   },
   {
     text: `Дуже задоволена співпрацею! Все було швидко, якісно...`,
-    img: "/IMG_0922.JPG",
+    img: "/qw.jpg",
     author: "Марія, підприємець",
   },
   {
     text: `Професійний підхід, креативність та увага до деталей...`,
-    img: "/IMG_0922.JPG",
+    img: "/wS.jpg",
     author: "Ірина, дизайнер",
   },
 ];
@@ -114,9 +115,11 @@ export default function MuiTestimonialsSlider() {
           }}
         />
         <Box
-          component="img"
+          component={Image}
           src={testimonials[activeStep].img}
           alt="testimonial visual"
+          width={320}
+          height={420}
           sx={{
             objectFit: "cover",
             maxWidth: { xs: 220, md: 320 },

@@ -1,9 +1,9 @@
 "use client";
 
 import type React from "react";
-import Image from "next/image";
+import Image from "@/app/components/OptimizedImage";
 import Link from "next/link";
-import { Box, useMediaQuery, useTheme } from "@mui/material";
+import { Box } from "@mui/material";
 import { useRef, useState } from "react";
 
 const identityItems = [
@@ -34,9 +34,6 @@ const identityItems = [
 ];
 
 export default function Page() {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-
   const sliderRef = useRef<HTMLDivElement>(null);
 
   const [isDragging, setIsDragging] = useState(false);
@@ -96,6 +93,9 @@ export default function Page() {
           onMouseMove={handleMouseMove}
           onMouseUp={stopDragging}
           onMouseLeave={stopDragging}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={stopDragging}
           className="flex overflow-x-auto lg:hidden"
           sx={{
             gap: `${GAP}px`,

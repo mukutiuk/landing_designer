@@ -8,24 +8,25 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import { Card, CardMedia, CardContent, Typography } from "@mui/material";
+import Image from "@/app/components/OptimizedImage";
+import { Box, Card, CardContent, Typography } from "@mui/material";
 
 const slides = [
   {
     title: "Senior Flowers",
-    img: "/IMG_1655 (2).JPG",
+    img: "/13.jpg",
   },
   {
     title: "Марта Янчинська",
-    img: "/IMG_0922.JPG",
+    img: "/14.jpg",
   },
   {
     title: "Club Food",
-    img: "/IMG_1592.JPG",
+    img: "/15.jpg",
   },
   {
     title: "Срібна Нота",
-    img: "/IMG_1670.JPG",
+    img: "/12.jpg",
   },
 ];
 
@@ -56,13 +57,15 @@ export default function PortfolioSlider() {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <Card className="bg-zinc-900 text-white rounded-2xl shadow-lg overflow-hidden transition-transform">
-              <CardMedia
-                component="img"
-                height="200"
-                image={slide.img}
-                alt={slide.title}
-                sx={{ objectFit: "cover" }}
-              />
+              <Box sx={{ position: "relative", height: 200 }}>
+                <Image
+                  src={slide.img}
+                  alt={slide.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </Box>
               <CardContent>
                 <Typography variant="h6" className="text-center">
                   {slide.title}

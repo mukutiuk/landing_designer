@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/app/components/OptimizedImage";
 
 export default function Page() {
   return (
@@ -9,7 +9,6 @@ export default function Page() {
         alt="Головна ілюстрація LLAMA English"
         width={1920}
         height={830}
-        priority
       />
 
       <Image
@@ -18,7 +17,6 @@ export default function Page() {
         alt="Головна ілюстрація LLAMA English"
         width={402}
         height={250}
-        priority
       />
 
       <div className="max-w-[1193px] m-auto  mb-[31px] lg:mb-[131px] px-[27px]">
@@ -53,7 +51,6 @@ export default function Page() {
         alt=""
         width={1440}
         height={2320}
-        priority
       />
       <Image
         className="w-full lg:hidden"

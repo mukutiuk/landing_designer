@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/app/components/OptimizedImage";
 import Link from "next/link";
 
 export default function Page() {
@@ -13,8 +13,6 @@ export default function Page() {
             alt="Ілюстрація робіт"
             width={492}
             height={289}
-            quality={100}
-            priority
           />
 
           <Image
@@ -22,7 +20,6 @@ export default function Page() {
             src="/wS.jpg"
             alt="Ілюстрація робіт (мобільна)"
             width={800}
-            quality={100}
             height={400}
           />
 
